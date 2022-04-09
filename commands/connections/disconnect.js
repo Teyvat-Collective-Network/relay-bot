@@ -11,7 +11,7 @@ export default new SlashCommand({
   const connection = await interaction.client.db.Global.findOne({ subscriptions: interaction.channel.id });
   if (!connection) return reply('This channel is not connected to any global channel');
 
-  delete interaction.channel.operations;
+  delete interaction.channel.global;
   await connection.updateOne({ $pull: { subscriptions: interaction.channel.id } });
 
   await reply(`Connection to ${connection.name} removed!`);

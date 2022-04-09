@@ -1,6 +1,8 @@
 import mongoose from 'mongoose';
 import Global from './global.js';
 import Message from './message.js';
+import Log from './log.js';
+
 
 export async function message(msg) {
   const id = msg.id || msg;
@@ -26,6 +28,11 @@ export async function subscription(channel) {
   return id && Global.findOne({ subscriptions: id });
 }
 
+export async function logs(timestamp = 0) {
+  return Log.find({ t: { $lt: timestamp } });
+}
+
+
 await mongoose.connect(process.env.MONGO);
 
-export { Global, Message };
+export { Global, Message, Log };

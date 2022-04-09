@@ -1,5 +1,6 @@
 import { Event } from '@aroleaf/djs-bot';
 import GlobalManager from '../lib/globalManager.js';
+import telemetry from '../lib/telemetry.js';
 
 export default new Event({
   event: 'ready',
@@ -13,4 +14,5 @@ export default new Event({
   for (const channel of channels) {
     channel.global = new GlobalManager(channel);
   }
+  telemetry.start();
 });
