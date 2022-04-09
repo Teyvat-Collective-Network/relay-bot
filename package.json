@@ -9,7 +9,7 @@
   "license": "MIT",
   "dependencies": {
     "@aroleaf/djs-bot": "file:../wrapper",
-    "@aroleaf/tcn-api": "^1.0.0",
+    "@aroleaf/tcn-api": "^1.0.1",
     "clui": "^0.3.6",
     "diff": "^5.0.0",
     "discord-markdown-embeds": "^2.0.5",
