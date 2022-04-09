@@ -1,4 +1,5 @@
 import Parent from './index.js';
+import * as util from '../../lib/util.js';
 
 Parent.subcommand({
   name: 'logchannel',
@@ -24,5 +25,9 @@ Parent.subcommand({
 
   const channel = interaction.options.getChannel('logchannel');
   await global.updateOne({ logs: channel.id });
-  return reply(`logs channel for ${global.name} changed to ${channel}`);
+  await reply(`logs channel for ${global.name} changed to ${channel}`);
+
+  util.log(util.fakeMessage(interaction, {
+    content: `${interaction.user} changed the log channel to ${channel}`,
+  }), util.tags.edit, global).catch(() => {});
 });

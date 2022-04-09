@@ -1,4 +1,5 @@
 import { SlashCommand } from '@aroleaf/djs-bot';
+import * as util from '../../lib/util.js';
 
 export default new SlashCommand({
   name: 'ban',
@@ -25,5 +26,9 @@ export default new SlashCommand({
   if (user.id === interaction.user.id) return reply('Sorry, you can\'t ban yourself.');
   await global.updateOne({ $push: { bans: user.id } });
 
-  return reply(`banned ${user} from ${global.name}`);
+  await reply(`banned ${user} from ${global.name}`);
+
+  util.log(util.fakeMessage(interaction, {
+    content: `${interaction.user} banned ${user}`,
+  }), util.tags.ban, global).catch(() => {});
 });

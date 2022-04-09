@@ -1,5 +1,6 @@
 import { ModalHandler } from '@aroleaf/djs-bot';
 import GlobalManager from '../../lib/globalManager.js';
+import * as util from '../../lib/util.js';
 
 export default new ModalHandler({
   name: 'modal:connect'
@@ -22,5 +23,9 @@ export default new ModalHandler({
   interaction.channel.operations = new GlobalManager(interaction.channel);
   await global.updateOne({ $push: { subscriptions: interaction.channel.id } });
 
-  reply(`Subscription to ${name} added!`);
+  await reply(`Subscription to ${name} added!`);
+
+  util.log(util.fakeMessage(interaction, {
+    content: `${interaction.user} connected ${interaction.channel}`,
+  }), util.tags.connect, global).catch(() => {});
 });

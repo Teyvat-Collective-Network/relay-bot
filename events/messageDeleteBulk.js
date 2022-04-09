@@ -24,11 +24,8 @@ export default new Event({
     channel.global.push(action);
   }
 
-  util.log({
-    client,
+  util.log(uril.fakeMessage(messages.first(), {
     content: `purged **${messages.size}** messages`,
     files: [{ name: 'messages.json', attachment: Buffer.from(JSON.stringify([...messages.values()], null, 2), 'utf8') }],
-    member: messages.first().guild.me,
-    author: client.user,
-  }, util.tags.purge, global).catch(() => {});
+  }), util.tags.bulk, global).catch(() => {});
 });

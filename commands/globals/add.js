@@ -1,4 +1,5 @@
 import Parent from './index.js';
+import * as util from '../../lib/util.js';
 
 Parent.subcommand({
   name: 'add',
@@ -20,6 +21,10 @@ Parent.subcommand({
   if (!interaction.client.execs.includes(interaction.user.id)) return reply('Sorry, only TCN execs can create new global channels.');
 
   const name = interaction.options.getString('name');
-  await interaction.client.db.Global.create({ name, logs: interaction.options.getChannel('logchannel', false)?.id });
-  return reply(`global channel ${name} created!`);
+  await interaction.client.db.Global.create({ name, logs: interaction.options.getChannel('logchannel')?.id });
+  await reply(`global channel ${name} created!`);
+
+  util.log(util.fakeMessage(interaction, {
+    content: `${interaction.user} created **${name}**`,
+  }), util.tags.create).catch(() => {});
 });

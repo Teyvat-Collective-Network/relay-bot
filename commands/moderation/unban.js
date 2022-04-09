@@ -1,4 +1,5 @@
 import { SlashCommand } from '@aroleaf/djs-bot';
+import * as util from '../../lib/util.js';
 
 export default new SlashCommand({
   name: 'unban',
@@ -25,5 +26,9 @@ export default new SlashCommand({
   if (!global.bans.includes(user.id)) return reply('That user isn\'t banned.');
   await global.updateOne({ $pull: { bans: user.id } });
 
-  return reply(`unbanned ${user} from ${global.name}`);
+  await reply(`unbanned ${user} from ${global.name}`);
+
+  util.log(util.fakeMessage(interaction, {
+    content: `${interaction.user} unbanned ${user}`,
+  }), util.tags.unban, global).catch(() => {});
 });
