@@ -8,7 +8,7 @@
   "commands": "./commands.js",
   "license": "MIT",
   "dependencies": {
-    "@aroleaf/djs-bot": "file:../wrapper",
+    "@aroleaf/djs-bot": "^1.1.0",
     "@aroleaf/tcn-api": "^1.0.1",
     "clui": "^0.3.6",
     "diff": "^5.0.0",
