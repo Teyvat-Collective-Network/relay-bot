@@ -29,7 +29,7 @@ export default new Event({
 
   for (const subscription of global.subscriptions.filter(sub => sub !== message.channel.id)) {
     const channel = message.client.channels.resolve(subscription);
-    if (!channel) return;
+    if (!channel) continue;
     channel.global ||= new GlobalManager(channel);
     channel.global.push(action);
   }

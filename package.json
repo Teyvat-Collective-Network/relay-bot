@@ -11,6 +11,7 @@
     "@aroleaf/djs-bot": "file:../wrapper",
     "@aroleaf/tcn-api": "^1.0.0",
     "clui": "^0.3.6",
+    "diff": "^5.0.0",
     "discord-markdown-embeds": "^2.0.5",
     "dotenv": "^16.0.0",
     "mongoose": "^6.2.10",

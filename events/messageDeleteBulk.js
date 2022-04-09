@@ -1,6 +1,7 @@
 import { Event } from '@aroleaf/djs-bot';
 import GlobalBulkDelete from '../lib/globalBulkDelete.js';
 import GlobalManager from '../lib/globalManager.js';
+import * as util from '../lib/util.js';
 
 export default new Event({
   event: 'messageDeleteBulk',
@@ -12,14 +13,22 @@ export default new Event({
 
   await client.db.Message.updateMany({ _id: { $in: docs.map(doc => doc._id) } }, { purged: true });
 
-  const mirrors = [...new Set(docs.map(doc => doc.mirrors.concat(doc.original)))];
+  const mirrors = [...new Set(docs.map(doc => doc.mirrors.concat(doc.original)).flat())];
 
   const action = new GlobalBulkDelete(docs);
 
   for (const mirror of mirrors) {
-    const channel = message.client.channels.resolve(mirror.channel);
-    if (!channel) return;
+    const channel = client.channels.resolve(mirror.channel);
+    if (!channel) continue;
     channel.global ||= new GlobalManager(channel);
     channel.global.push(action);
   }
+
+  util.log({
+    client,
+    content: `purged **${messages.size}** messages`,
+    files: [{ name: 'messages.json', attachment: Buffer.from(JSON.stringify([...messages.values()], null, 2), 'utf8') }],
+    member: messages.first().guild.me,
+    author: client.user,
+  }, util.tags.purge, global).catch(() => {});
 });

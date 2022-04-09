@@ -8,7 +8,7 @@ export default new Event({
 }, async client => {
   const docs = await client.db.Global.find({});
   const channels = 
-    [...new Set(docs.flatMap(doc => doc.subscriptions.concat(doc.logs||[])))]
+    [...new Set(docs.flatMap(doc => doc.subscriptions))]
     .map(id => client.channels.resolve(id))
     .filter(ch => ch);
   for (const channel of channels) {
