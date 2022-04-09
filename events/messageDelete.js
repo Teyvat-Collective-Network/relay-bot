@@ -23,5 +23,5 @@ export default new Event({
 
   const original = await util.original(message.client, doc) || message;
   
-  util.log(original, util.tags.purge, global).catch();
+  util.log(original, util.tags.purge, global).catch(() => {});
 });
