@@ -4,7 +4,7 @@ import fs from 'fs/promises';
 import path from 'path';
 
 const docFiles = await fs.readdir(path.resolve('docs'));
-const docs = Object.fromEntries(await Promise.all(docFiles.map(async file => [file, DME.render(await fs.readFile(path.resolve('docs', file), 'utf8')).messages()[0]])));
+const docs = Object.fromEntries(await Promise.all(docFiles.map(async file => [file, DME.render(await fs.readFile(path.resolve('docs', file), 'utf8'))])));
 
 export default new SlashCommand({
   name: 'help',
