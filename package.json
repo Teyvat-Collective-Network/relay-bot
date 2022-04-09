@@ -1,0 +1,19 @@
+{
+  "name": "tc-global",
+  "type": "module",
+  "version": "2.0.0-1",
+  "private": true,
+  "decription": "",
+  "exports": "./index.js",
+  "commands": "./commands.js",
+  "license": "MIT",
+  "dependencies": {
+    "@aroleaf/djs-bot": "file:../wrapper",
+    "@aroleaf/tcn-api": "^1.0.0",
+    "discord-markdown-embeds": "^2.0.4",
+    "dotenv": "^16.0.0",
+    "mongoose": "^6.2.10",
+    "xregexp": "^5.1.0",
+    "zx": "^6.0.7"
+  }
+}

@@ -1,0 +1,88 @@
+\b[li1]mpr[e3]g(nat[e3])?\b; impreg
+\babortion\b
+\bahegao\b
+\banal\b
+\banus\b
+\bballsack?\b
+\bbdsm\b
+\bbea?stiality\b
+\bbeefcurtains\b
+\bblowjob\b
+\bblue[- ]?waffle\b
+\bboobjob\b
+\bbred\b
+\bbreeding\b
+\bbukkake?\b
+\bbumchum\b
+\bbuttfuck\b
+\bbuttnugget\b
+\bbuttplug\b
+\bchickswithdicks\b
+\bc[o0]c(k(omi)?)?\b; cock(omi)
+\bchoa?d(es?)?\b; chode
+\bcl[i1]t[so]?(ty|r[iu]s)?; clitoris
+\bcrackwhore\b
+\bcreampie\b
+\bcum(ming)?\b
+s[e3](x|gg?s); sex
+(?<!\d)\d{6}(?!\d); sauce
+\bdeep[- ]?throat\b
+\bdickcheese\b
+\bdildo\b
+\bcuntflaps\b
+\beja[ck]ul(ate?|ierer)\b; ejaculate
+\bfap\b
+\bfell?at(e|io)\b
+\bforeskin\b
+\bgang[- ]?(bang|rape)\b
+\bgigolo\b
+\bgloryhole\b
+\bg[- ]?spot\b
+\bhan[gd]job\b
+\bhard[- ]?on\b
+\bh(en)?ta?i\b; hentai
+\bherpes\b
+\bhooker\b
+\bh[o0]rn[yi1]\b; horny
+\bincest\b
+\b(jack|jerk)(ing)?[- ]?off\b
+\bji(sm|zz)\b
+\blolicon\b
+\bmast[eu]rb[ea][rt](e|ion|ing|eur)?\b; masturbate
+\bmeatsping\b
+\bmetacuck\b
+\bmolest\b
+\bnutsack\b
+\borgasm\b
+\borg(y|ies?)\b; orgy
+\bp[o0]rno?\b; porn
+\bp[e3]?n[i1][s5]; penis
+\bpa?edo((ph|f)ile)?\b; pedophile
+\bpegg?(ing)?\b
+\bprostitution\b
+\bpub(i[sc]|es?)\b; pubes
+\bpu(ta|ss(y|ies?))\b; pussy
+\br[a@4*]p(ed?|ing|ist); rape
+\brectum\b
+\brimjob\b
+\br(ule)?34\b
+\bs[l1]utd?\b; slut
+\bscat\b
+\bscrotum\b
+\bsemen\b
+\bshemale\b
+\bshlong\b
+\bsperm\b
+\bstrap[- ]?on\b
+\bstriptease\b
+\btest(e|icle)s?\b
+\btubgirl\b
+\bvag[ai]n[ae]\b
+\bzoophil(e|ia)\b
+\bcamel(cunt|toe)\b
+\bcunn(y|ie)\b
+\bchebs\b
+\bclunge\b
+\bdicknose\b
+\bfetish\b
+\bgolden[- ]?shower\b
