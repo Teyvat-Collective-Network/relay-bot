@@ -25,7 +25,7 @@ export default new Event({
   if (!doc) return;
 
   const data = await util.constructMessage(message, await message.client.db.reference(message));
-  if (!data) return;
+  if (!data()) return;
 
   const action = new GlobalUpdate(doc, data);
 
