@@ -11,7 +11,7 @@ export default new ModalHandler({
 
   if (!interaction.client.execs.includes(interaction.user.id)) {
     if (await interaction.client.tcn.guilds(interaction.guild.id).get().then(res => res.error)) return reply('Sorry, only partnered server can connect to global channels.');
-    if (!interaction.memberPermissions.has(1n<<2n)) return reply('Sorry, only TCN execs or admins can manage connections');
+    if (!interaction.memberPermissions.has(1n<<3n)) return reply('Sorry, only TCN execs or admins can manage connections');
   }
 
   const global = await interaction.client.db.Global.findOne({ name });
