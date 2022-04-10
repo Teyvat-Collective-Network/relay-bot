@@ -1,4 +1,4 @@
-3import { ModalHandler } from '@aroleaf/djs-bot';
+import { ModalHandler } from '@aroleaf/djs-bot';
 import GlobalManager from '../../lib/globalManager.js';
 import * as util from '../../lib/util.js';
 
