@@ -14,7 +14,7 @@ export default new Event({
   if (global.bans.includes(message.author.id) || check(message.content)) return message.delete().catch(() => {});
 
   const data = await util.constructMessage(message, await message.client.db.reference(message));
-  if (!data) return;
+  if (!data()) return;
 
   const doc = await message.client.db.Message.create({
     author: message.author.id,
