@@ -1,4 +1,4 @@
-import { ModalHandler } from '@aroleaf/djs-bot';
+3import { ModalHandler } from '@aroleaf/djs-bot';
 import GlobalManager from '../../lib/globalManager.js';
 import * as util from '../../lib/util.js';
 
@@ -10,8 +10,8 @@ export default new ModalHandler({
   const name = interaction.fields[0].value;
 
   if (!interaction.client.execs.includes(interaction.user.id)) {
-    if (await interaction.client.tcn.guilds(interaction.guild.id).get().then(res => res.error)) return reply('Sorry, only partnered server can ban people from global channels.');
-    if (!interaction.memberPermissions.has(1n<<2n)) return reply('Sorry, only TCN execs or members with ban permissions can ban users.');
+    if (await interaction.client.tcn.guilds(interaction.guild.id).get().then(res => res.error)) return reply('Sorry, only partnered server can connect to global channels.');
+    if (!interaction.memberPermissions.has(1n<<2n)) return reply('Sorry, only TCN execs or admins can manage connections');
   }
 
   const global = await interaction.client.db.Global.findOne({ name });
