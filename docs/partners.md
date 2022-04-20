@@ -11,7 +11,7 @@ A network of high-quality Genshin Impact character-mains style servers that focu
 
 Within the network, individual and network-wide events are held such as: tournaments, scavenger hunts and other fun events, community nights, giveaways, and patch preview livestreams.
 
-#-Al-Je
+#-Al-Ka
 - [Aloy](https://discord.gg/XMvnptFtqt)
 - [Ayaka](https://discord.gg/q8XSUhfG5W)
 - [Barbara](https://discord.gg/6vVQcsrAgN)
@@ -25,9 +25,9 @@ Within the network, individual and network-wide events are held such as: tournam
 - [Gorou](https://discord.gg/NeDba9DQU4)
 - [Itto](https://discord.gg/tSkueZcF55)
 - [Jean](https://discord.gg/fSw9xXSyTe)
+- [Kaeya's Cavalry](https://discord.gg/SZe5HJfujv)
 
 #-Ka-Sa
-- [Kaeya's Cavalry](https://discord.gg/SZe5HJfujv)
 - [Kaeya Mains](https://discord.gg/WQzCpybycn)
 - [Kazuha](https://discord.gg/S8uWtzECEW)
 - [Klee](https://discord.gg/NwYDDrfKZU)
@@ -37,6 +37,7 @@ Within the network, individual and network-wide events are held such as: tournam
 - [Ningguang](https://discord.gg/wAnZggp9mt)
 - [Noelle](https://discord.gg/kvft4TKFet)
 - [Qiqi](https://discord.gg/wcZ69vg2KY)
+- [Raiden](https://discord.gg/Qfw4m2AbRM)
 - [Razor](https://discord.gg/4BzHdAzHGR)
 - [Sara](https://discord.gg/zYkjpsEQMa)
 - [Sayu](https://discord.gg/6g4xqvV22t)
