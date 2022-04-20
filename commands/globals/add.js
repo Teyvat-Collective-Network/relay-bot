@@ -18,7 +18,8 @@ Parent.subcommand({
 }, async interaction => {
   const reply = content => interaction.reply({ content, ephemeral: true });
 
-  if (!interaction.client.execs.includes(interaction.user.id)) return reply('Sorry, only TCN execs can create new global channels.');
+  const apiUser = interaction.client.tcn.users.get(interaction.user.id);
+  if (!(apiUser.exec || apiUser.observer)) return reply('Sorry, only TCN execs can create new global channels.');
 
   const name = interaction.options.getString('name');
   await interaction.client.db.Global.create({ name, logs: interaction.options.getChannel('logchannel')?.id });

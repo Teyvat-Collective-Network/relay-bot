@@ -14,8 +14,7 @@ const client = new Bot({
 });
 
 client.db = db;
-client.tcn = TCN({ base: process.env.API_URL });
-client.execs = await client.tcn.users.execs.get().then(res => Object.keys(res));
+client.tcn = new TCN.Client({ base: process.env.API_URL, secure: !process.env.API_URL?.startsWith('localhost') });
 client.stickerCache = new StickerCache(client, 'cache');
 
 client.login(process.env.TOKEN);

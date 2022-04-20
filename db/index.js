@@ -15,9 +15,9 @@ export async function messages(msgs) {
   return Message.find({ $or: [ { 'original.message': ids }, { 'mirrors.message': ids } ] });
 }
 
-export async function nickname(user) {
-  const entry = await User.findOne({ user: user.id });
-  return entry?.nickname;
+export async function user(user) {
+  const id = user.id || user;
+  return id && User.findOne({ user: user.id });
 }
 
 export async function reference(msg) {
@@ -41,4 +41,4 @@ export async function logs(timestamp = 0) {
 
 await mongoose.connect(process.env.MONGO);
 
-export { Global, Message, Nickname, Log };
+export { Global, Message, User, Log };
