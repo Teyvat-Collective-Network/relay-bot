@@ -19,7 +19,8 @@ Parent.subcommand({
 }, async interaction => {
   const reply = content => interaction.reply({ content, ephemeral: true });
 
-  if (!interaction.client.execs.includes(interaction.user.id)) return reply('Sorry, only TCN execs can do that');
+  const apiUser = interaction.client.tcn.users.get(interaction.user.id);
+  if (!(apiUser.exec || apiUser.observer)) return reply('Sorry, only TCN execs can do that');
   const global = await interaction.client.db.Global.findOne({ name: interaction.options.getString('name') });
   if (!global) return reply('Sorry, that is not a global channel');
 
