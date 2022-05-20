@@ -11,49 +11,59 @@ A network of high-quality Genshin Impact character-mains style servers that focu
 
 Within the network, individual and network-wide events are held such as: tournaments, scavenger hunts and other fun events, community nights, giveaways, and patch preview livestreams.
 
-#-Al-Ka
-- [Aloy](https://discord.gg/XMvnptFtqt)
-- [Ayaka](https://discord.gg/q8XSUhfG5W)
-- [Barbara](https://discord.gg/6vVQcsrAgN)
-- [Beidou](https://discord.gg/rgS2f9dBxb)
+#-<:pyro:977274232444686366>
 - [Bennett](https://discord.gg/qrjeEyejsd)
-- [Chongyun](https://discord.gg/FT4ZFmgf8T)
-- [Dainsleif](https://discord.gg/8hdu7758yQ)
-- [Diona](https://discord.gg/JkeJWTtzGT)
-- [Fischl](https://discord.gg/JSN9Rk2sWe)
-- [Gorou](https://discord.gg/NeDba9DQU4)
-- [Itto](https://discord.gg/tSkueZcF55)
-- [Jean](https://discord.gg/fSw9xXSyTe)
-- [Kaeya's Cavalry](https://discord.gg/SZe5HJfujv)
-
-#-Ka-Sa
-- [Kaeya Mains](https://discord.gg/WQzCpybycn)
-- [Kazuha](https://discord.gg/S8uWtzECEW)
 - [Klee](https://discord.gg/NwYDDrfKZU)
+- [Thoma](https://discord.gg/MTvShKDVfX)
+- [Xiangling](https://discord.gg/7ybnnQXxyS)
+- [Xinyan](https://discord.gg/XQkAKTXbNQ)
+- [Yoimiya](https://discord.gg/qr2QvucFcC)
+
+#-<:hydro:977274232520183918>
+- [Barbara](https://discord.gg/6vVQcsrAgN)
 - [Kokomi](https://discord.gg/ErHp3BnFkg)
-- [Lisa](https://discord.gg/5SYy4MPPCt)
 - [Mona](https://discord.gg/wVERTRUNBx)
-- [Ningguang](https://discord.gg/wAnZggp9mt)
-- [Noelle](https://discord.gg/kvft4TKFet)
-- [Qiqi](https://discord.gg/wcZ69vg2KY)
+- [Xingqiu](https://discord.gg/5MKsJyhkQv)
+
+#-<:anemo:977274485835198494>
+- [Jean](https://discord.gg/fSw9xXSyTe)
+- [Kazuha](https://discord.gg/S8uWtzECEW)
+- [Sayu](https://discord.gg/6g4xqvV22t)
+- [Sucrose](https://discord.gg/SRgmCt4)
+- [Venti](https://discord.gg/zneUYpbgPQ)
+- [Xiao](https://discord.gg/u5QS2tRHm6)
+
+#-<:electro:977274232419536906>
+- [Beidou](https://discord.gg/rgS2f9dBxb)
+- [Fischl](https://discord.gg/JSN9Rk2sWe)
+- [Lisa](https://discord.gg/5SYy4MPPCt)
 - [Raiden](https://discord.gg/Qfw4m2AbRM)
 - [Razor](https://discord.gg/4BzHdAzHGR)
 - [Sara](https://discord.gg/zYkjpsEQMa)
-- [Sayu](https://discord.gg/6g4xqvV22t)
-
-#-Se-Zh
-- [Shenhe](https://discord.gg/TZ9tpJMU5F)
-- [Sucrose](https://discord.gg/SRgmCt4)
-- [Thoma](https://discord.gg/MTvShKDVfX)
-- [Traveler](https://discord.gg/RsdUnupKpj)
-- [Venti](https://discord.gg/zneUYpbgPQ)
-- [Xiangling](https://discord.gg/7ybnnQXxyS)
-- [Xiao](https://discord.gg/u5QS2tRHm6)
-- [Xingqiu](https://discord.gg/5MKsJyhkQv)
-- [Xinyan](https://discord.gg/XQkAKTXbNQ)
 - [Yae](https://discord.gg/6RFKM446cA)
-- [Yoimiya](https://discord.gg/qr2QvucFcC)
+
+<!-- #-<:dendro:977274231740059730> -->
+
+#-<:cryo:977274232461479976>
+- [Aloy](https://discord.gg/XMvnptFtqt)
+- [Ayaka](https://discord.gg/q8XSUhfG5W)
+- [Chongyun](https://discord.gg/FT4ZFmgf8T)
+- [Diona](https://discord.gg/JkeJWTtzGT)
+- [Kaeya's Cavalry](https://discord.gg/SZe5HJfujv)
+- [Kaeya Mains](https://discord.gg/WQzCpybycn)
+- [Qiqi](https://discord.gg/wcZ69vg2KY)
+- [Shenhe](https://discord.gg/TZ9tpJMU5F)
+
+#-<:geo:977274232356622386>
+- [Gorou](https://discord.gg/NeDba9DQU4)
+- [Itto](https://discord.gg/tSkueZcF55)
+- [Ningguang](https://discord.gg/wAnZggp9mt)
+- [Noelle](https://discord.gg/kvft4TKFet)
 - [Yun Jin](https://discord.gg/KSAe7tcY93)
 - [Zhongli](https://discord.gg/3h5uepPXKr)
+
+#-<:other:977277466680909904>
+- [Dainsleif](https://discord.gg/8hdu7758yQ)
+- [Traveler](https://discord.gg/RsdUnupKpj)
 
 ![banner](https://cdn.discordapp.com/attachments/837770046289084436/851354919909982228/Namecard_Background_Travel_Notes_Fading_Star.png)
