@@ -19,7 +19,6 @@ Within the network, individual and network-wide events are held such as: tournam
 - [Bennett](https://discord.gg/qrjeEyejsd)
 - [Chongyun](https://discord.gg/FT4ZFmgf8T)
 - [Dainsleif](https://discord.gg/8hdu7758yQ)
-- [Diluc](https://discord.gg/af9MWyd)
 - [Diona](https://discord.gg/JkeJWTtzGT)
 - [Fischl](https://discord.gg/JSN9Rk2sWe)
 - [Gorou](https://discord.gg/NeDba9DQU4)
