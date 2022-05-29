@@ -17,7 +17,8 @@ export default new SlashCommand({
     required: true,
   }],
 }, interaction => {
-  const msg = docs[interaction.options.getString('page')];
+  console.log(docs);
+  const msg = docs[interaction.options.getString('page')].messages()[0];
   msg.ephemeral = true;
   interaction.reply(msg);
 });
