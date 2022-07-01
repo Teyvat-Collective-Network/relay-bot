@@ -7,7 +7,7 @@ const compiled = (await compileRegexes(['filter/offensive.txt', 'filter/sexual.t
 
 async function compileScams(source) {
   const data = await fs.readFile(path.resolve(source), 'utf-8');
-  return JSON.parse(data).map(scam => XRegExp(`\\b(https?://)?${XRegExp.escape(scam)}`, 'in'));
+  return JSON.parse(data).map(scam => XRegExp(`(^|\\w)(https?://)?${XRegExp.escape(scam)}([\\w/]|$)`, 'in'));
 }
 
 async function compileRegexes(sources) {
@@ -20,8 +20,12 @@ async function compileRegexes(sources) {
 }
 
 export function check(text) {
+  console.log(text);
   for (const regex of compiled) {
-    if (regex.test(text)) return true;
+    if (regex.test(text)) {
+      console.log(regex);
+      return true;
+    }
   }
   return false;
 } export default check;
