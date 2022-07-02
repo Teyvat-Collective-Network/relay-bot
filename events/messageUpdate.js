@@ -44,15 +44,4 @@ export default new Event({
       return (out.length > 32 ? `${out.slice(0, 16)}...${out.slice(out.length-16, out.length)}` : out).replace(regex.escape, '$1\\$2');
     }).join(''),
   }), util.tags.edit, global).catch(() => {});
-
-
-  // const log = await constructLog(Object.assign(Object.create(message), {
-  //   content: `**[${global.name}]** ` + diffWords(old.content, message.content).map(res => {
-  //     const out = res.value;
-  //     if (res.added) return out.replace(escapeRegex, '$1\\$2').replace(trimRegex, '$1**$2**$3');
-  //     if (res.removed) return out.replace(escapeRegex, '$1\\$2').replace(trimRegex, '$1~~$2~~$3');
-  //     return (out.length > 32 ? `${out.slice(0, 16)}...${out.slice(out.length-16, out.length)}` : out).replace(escapeRegex, '$1\\$2');
-  //   }).join(''),
-  // }), 'edit');
-  // await message.client.log(global, log).catch(console.log);
 });

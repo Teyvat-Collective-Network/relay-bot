@@ -6,31 +6,31 @@ import User from './user.js';
 
 
 export async function message(msg) {
-  const id = msg.id || msg;
+  const id = msg?.id || msg;
   return id && Message.findOne({ $or: [ { 'original.message': id }, { 'mirrors.message': id } ] });
 }
 
 export async function messages(msgs) {
-  const ids = msgs.map(msg => msg.id || msg).filter(m => m);
-  return Message.find({ $or: [ { 'original.message': ids }, { 'mirrors.message': ids } ] });
+  const ids = msgs?.map(msg => msg.id || msg).filter(m => m);
+  return ids && Message.find({ $or: [ { 'original.message': ids }, { 'mirrors.message': ids } ] });
 }
 
 export async function user(user) {
-  const id = user.id || user;
+  const id = user?.id || user;
   return id && User.findOne({ user: user.id });
 }
 
 export async function reference(msg) {
-  const id = msg.reference?.messageId;
+  const id = msg?.reference?.messageId;
   return id && message(id);
 }
 
 export async function global(name) {
-  return Global.findOne({ name });
+  return name && Global.findOne({ name });
 }
 
 export async function subscription(channel) {
-  const id = channel.id || channel;
+  const id = channel?.id || channel;
   return id && Global.findOne({ subscriptions: id });
 }
 
