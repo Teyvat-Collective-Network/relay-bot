@@ -1,6 +1,7 @@
 ---
 color: 0x207868
 ---
+
 # TCN Global Chat FAQ
 
 ## What is this channel?

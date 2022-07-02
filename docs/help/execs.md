@@ -1,6 +1,7 @@
 ---
 color: 0x207868
 ---
+
 # Exec Help | TCN Global Chat
 
 The owner of this bot, and members of the executive council are the only users allowed to add and remove global chats.\

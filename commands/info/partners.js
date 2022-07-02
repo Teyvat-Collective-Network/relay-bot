@@ -1,9 +1,5 @@
 import { SlashCommand } from '@aroleaf/djs-bot';
-import DME from 'discord-markdown-embeds';
-import fs from 'fs/promises';
-import path from 'path';
-
-const doc = DME.render(await fs.readFile(path.resolve('docs/partners.md'), 'utf8'), { ul: '➜ ' }).messages()[0];
+import getDocument from '../../docs/index.js';
 
 export default new SlashCommand({
   name: 'partners',
@@ -13,7 +9,10 @@ export default new SlashCommand({
     name: 'public',
     description: 'Set this to true if other users should be able to see the embed',
   }],
-}, interaction => {
-  doc.ephemeral = !interaction.options.getBoolean('public');
-  interaction.reply(doc);
+}, async interaction => {
+  const doc = await getDocument('partners');
+  interaction.reply({
+    embeds: doc.render({ ul: '➜ ' }),
+    ephemeral: !interaction.options.getBoolean('public'),
+  });
 });

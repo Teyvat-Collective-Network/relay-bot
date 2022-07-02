@@ -1,6 +1,7 @@
 ---
 color: 0x207868
 ---
+
 # Moderator Help | TCN Global Chat
 
 ## Removing unwanted content

@@ -13,8 +13,9 @@ Within the network, individual and network-wide events are held such as: tournam
 
 #-<:pyro:977274232444686366>
 - [Bennett](https://discord.gg/qrjeEyejsd)
+- [Diluc](https://discord.gg/kXkaJ9585q)
 - [Klee](https://discord.gg/NwYDDrfKZU)
-- [Thoma](https://discord.gg/MTvShKDVfX)
+- [Thoma](https://discord.gg/djapjnyy3s)
 - [Xiangling](https://discord.gg/7ybnnQXxyS)
 - [Xinyan](https://discord.gg/XQkAKTXbNQ)
 - [Yoimiya](https://discord.gg/qr2QvucFcC)
@@ -66,4 +67,4 @@ Within the network, individual and network-wide events are held such as: tournam
 - [Dainsleif](https://discord.gg/8hdu7758yQ)
 - [Traveler](https://discord.gg/RsdUnupKpj)
 
-![banner](https://cdn.discordapp.com/attachments/837770046289084436/851354919909982228/Namecard_Background_Travel_Notes_Fading_Star.png)
+![banner](https://i.imgur.com/xLbIXEf.png)
