@@ -25,7 +25,6 @@
 \bcreampie\b
 \bcum(ming)?\b
 s[e3](x|gg?s); sex
-(?<!\d)\d{6}(?!\d); sauce
 \bdeep[- ]?throat\b
 \bdickcheese\b
 \bdildo\b
