@@ -27,7 +27,7 @@ This can include politics, suicide, or religion.
 This includes server-hopping, sending a message from each server you're hopping to.
 
 ## 7. No self-promotion
-The global chat exist to chat, not to advertize. 
+The global chat exists to chat, not to advertize. 
 
 ## 8. English only
 Please don't have conversations in other languages than English, other languages can't be moderated consistently.
