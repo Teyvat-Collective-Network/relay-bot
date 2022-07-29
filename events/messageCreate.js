@@ -8,7 +8,7 @@ import * as util from '../lib/util.js';
 export default new Event({
   event: 'messageCreate',
 }, async message => {
-  message.channel.webhooks ??= await message.channel.fetchWebhooks().catch(() => {});
+  message.channel.webhooks ??= await message.channel.fetchWebhooks?.().catch(() => {});
   if (message.channel.webhooks.get(message.webhookId)?.owner?.id === message.client.user.id) return;
 
   if (/(?!<a?:\w+:\d+>)(.{2}|^.?):\w+:/.test(message.content) && await new Promise(resolve => {

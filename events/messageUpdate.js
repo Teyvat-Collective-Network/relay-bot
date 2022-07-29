@@ -14,7 +14,7 @@ const regex = {
 export default new Event({
   event: 'messageUpdate',
 }, async (old, message) => {
-  message.channel.webhooks ??= await message.channel.fetchWebhooks().catch(() => {});
+  message.channel.webhooks ??= await message.channel.fetchWebhooks?.().catch(() => {});
   if (message.channel.webhooks.get(message.webhookId)?.owner?.id === message.client.user.id) return;
 
   const global = await message.client.db.subscription(message.channel);
