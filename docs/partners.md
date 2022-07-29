@@ -3,7 +3,9 @@ color: 0x207868
 thumbnail: https://cdn.discordapp.com/attachments/871008085525819412/879366029921357884/TCN-removebg-preview.png
 ---
 
-# Teyvat Collective Network:
+# Teyvat Collective Network
+
+[teyvatcollective.network](https://teyvatcollective.network 'the TCN website')
 
 > In Teyvat, the stars in the sky will always have a place for you.
 
