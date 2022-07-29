@@ -8,10 +8,21 @@ import * as util from '../lib/util.js';
 export default new Event({
   event: 'messageCreate',
 }, async message => {
-  const global = message.member && await message.client.db.subscription(message.channel);
+  message.channel.webhooks ??= await message.channel.fetchWebhooks().catch(() => {});
+  if (message.channel.webhooks.get(message.webhookId)?.owner?.id === message.client.user.id) return;
+
+  if (/(?!<a?:\w+:\d+>)(.{2}|^.?):\w+:/.test(message.content) && await new Promise(resolve => {
+    setTimeout(async () => resolve(util.isDeletedMessage(message)), 2500);
+  })) return;
+
+  const global = await message.client.db.subscription(message.channel);
   if (!global) return;
 
-  if (global.bans.includes(message.author.id) || check(message.content)) return message.delete().catch(() => {});
+  if (global.bans.includes(message.author.id)) message.delete().catch(() => {});
+  if(check(message.content)) {
+    await message.delete().catch(() => {});
+    return util.log(message, util.tags.blocked, global).catch(() => {});
+  }
 
   const data = await util.constructMessage(message, await message.client.db.reference(message));
   if (!data()) return;

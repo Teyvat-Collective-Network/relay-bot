@@ -6,6 +6,7 @@ import * as util from '../lib/util.js';
 export default new Event({
   event: 'messageDelete',
 }, async message => {
+  util.markDeletedMessage(message);
   const doc = await message.client.db.message(message);
   if (!doc || doc.purged) return;
   const global = await message.client.db.subscription(message.channel);

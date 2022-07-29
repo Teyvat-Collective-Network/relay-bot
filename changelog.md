@@ -3,6 +3,19 @@
 Updates to the scam link list won't be explicitely versioned. The current scam link count is `13739`.
 
 
+## 1.6
+
+### webhooks
+- webhook messages not sent by the global bot are now relayed. this makes NQN work
+- the bot will also detect that a message might get deleted by NQN, and delay the relay operation, to not send unnecessary messages.
+
+### stickers
+- lottie stickers (the default nitro stickers) will now be relayed
+
+### moderation
+- messages blocked by the word filter will now be logged
+
+
 ## 1.5
 
 - added `/rules`: show the global chat's rules

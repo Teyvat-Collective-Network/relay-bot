@@ -15,7 +15,6 @@
     "discord-markdown-embeds": "^2.0.5",
     "dotenv": "^16.0.0",
     "mongoose": "^6.2.10",
-    "xregexp": "^5.1.0",
-    "zx": "^6.0.7"
+    "xregexp": "^5.1.0"
   }
 }
