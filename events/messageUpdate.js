@@ -18,7 +18,7 @@ export default new Event({
   if (message.channel.webhooks?.get(message.webhookId)?.owner?.id === message.client.user.id) return;
 
   const global = await message.client.db.subscription(message.channel);
-  if (!global) return;
+  if (!global || global.panic) return;
 
   const diff = diffWords(old.content || '', message.content || '').map(res => {
     const out = res.value;

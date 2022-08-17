@@ -2,7 +2,7 @@ import { SlashCommand } from '@aroleaf/djs-bot';
 
 export default new SlashCommand({
   name: 'connect',
-    description: 'connect to a global channel',
+  description: 'connect to a global channel',
 }, async interaction => {
   const reply = content => interaction.reply({ content, ephemeral: true });
 

@@ -34,6 +34,16 @@ export async function subscription(channel) {
   return id && Global.findOne({ subscriptions: id });
 }
 
+export async function panic(global) {
+  const name = global?.name || global;
+  return global && Global.updateOne({ name }, { panic: true });
+}
+
+export async function unpanic(global) {
+  const name = global?.name || global;
+  return global && Global.updateOne({ name }, { panic: false });
+}
+
 export async function logs(timestamp = 0) {
   return Log.find({ t: { $lt: timestamp } });
 }

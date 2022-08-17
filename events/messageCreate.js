@@ -16,7 +16,7 @@ export default new Event({
   })) return;
 
   const global = await message.client.db.subscription(message.channel);
-  if (!global) return;
+  if (!global || global.panic) return;
 
   if (global.bans.includes(message.author.id)) message.delete().catch(() => {});
   if(check(message.content)) {

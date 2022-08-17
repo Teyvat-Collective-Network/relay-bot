@@ -20,3 +20,6 @@ If a global channel is not being used anymore, for example because a collab has 
 ## Changing the log channel
 You can change where log messages for a global channel get sent with the `/globals logchannel` command. 
 ![changing the log channel of a global channel](https://i.ibb.co/gTQVc6W/logchannel.gif)
+
+## Panic mode
+When a global channel is in panic mode, you can use `/unpanic` to turn off panic mode.

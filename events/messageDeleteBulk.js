@@ -8,6 +8,7 @@ export default new Event({
 }, async messages => {
   const client = messages.first().client;
   const global = await client.db.subscription(messages.first().channel);
+  if (global?.panic) return;
   const docs = (await client.db.messages(messages)).filter(doc => !doc.purged);
   if (!docs.length) return;
 

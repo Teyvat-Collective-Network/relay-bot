@@ -21,11 +21,11 @@ export default new Event({
   let res;
   try {
     res = await Function(`
-    return async function(env) {
-      ${Object.keys(env).map(k => `let ${k} = env['${k}'];`).join('\n')}
-      ${codeblocks.join('\n')}
-    }
-  `)()(env).catch(e => e);
+      return async function(env) {
+        ${Object.keys(env).map(k => `let ${k} = env['${k}'];`).join('\n')}
+        ${codeblocks.join('\n')}
+      }
+    `)()(env).catch(e => e);
   } catch (error) {
     res = error;
   }

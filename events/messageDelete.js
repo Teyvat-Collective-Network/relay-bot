@@ -11,6 +11,8 @@ export default new Event({
   if (!doc || doc.purged) return;
   const global = await message.client.db.subscription(message.channel);
 
+  if (global?.panic) return;
+
   await doc.updateOne({ purged: true });
   
   const action = new GlobalDelete(doc);

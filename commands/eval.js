@@ -15,6 +15,8 @@ export default new SlashCommand({
   const codeblocks = message.content.split(/```(?:js)?(.+?)```/sg).filter((_,i) => i%2);
   if (!codeblocks.length) return reply('No code found');
 
+  await interaction.deferReply({ ephemeral: true });
+
   const env = {
     interaction,
     message,
@@ -25,11 +27,11 @@ export default new SlashCommand({
   let res;
   try {
     res = await Function(`
-    return async function(env) {
-      ${Object.keys(env).map(k => `let ${k} = env['${k}'];`).join('\n')}
-      ${codeblocks.join('\n')}
-    }
-  `)()(env).catch(e => e);
+      return async function(env) {
+        ${Object.keys(env).map(k => `let ${k} = env['${k}'];`).join('\n')}
+        ${codeblocks.join('\n')}
+      }
+    `)()(env).catch(e => e);
   } catch (error) {
     res = error;
   }
@@ -38,12 +40,10 @@ export default new SlashCommand({
     colors: true,
     depth: 4,
     breakLength: null,
-    numericSeparator: true,
   });
   
-  return interaction.reply({
+  return interaction.editReply({
     content: '**eval results**' + (out.length <= 1970 ? `\`\`\`ansi\n${out}\n\`\`\`` : ''),
     files: out.length > 1984 ? [{ name: 'results.ansi', attachment: Buffer.from(out) }] : [],
-    ephemeral: true,
   });
 });

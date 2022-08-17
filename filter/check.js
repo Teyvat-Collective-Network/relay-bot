@@ -2,8 +2,12 @@ import fs from 'fs/promises';
 import XRegExp from 'xregexp';
 import path from 'path';
 
-const compiled = (await compileRegexes(['filter/offensive.txt', 'filter/sexual.txt', 'filter/slurs.txt', 'filter/other.txt']))
-          .concat(await compileScams('filter/scamlinks.json'));
+const compiled = (await compileRegexes([
+  'filter/offensive.txt',
+  'filter/sexual.txt',
+  'filter/slurs.txt',
+  'filter/other.txt'
+])).concat(await compileScams('filter/scamlinks.json'));
 
 async function compileScams(source) {
   const data = await fs.readFile(path.resolve(source), 'utf-8');
