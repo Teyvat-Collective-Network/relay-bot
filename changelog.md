@@ -1,7 +1,15 @@
 # TCN global relay bot changelog
 
-Updates to the scam link list won't be explicitely versioned. The current scam link count is `14352`.
+Updates to the scam link list won't be explicitely versioned. The current scam link count is `14762`.
 
+## 1.7
+
+### Panic mode
+Adds two new commands:
+- `/panic`: enables panic mode for a global channel
+- `/unpanic`: disables panic mode for a global channel
+Panic mode instantly disables most interactions with the global channel panic mode is activated for. This can be useful in case of a raid or similar event.
+Panic mode can be switched on by anyone with MANAGE_MESSAGES permissions, but can only be switched off by TCN observers.
 
 ## 1.6
 
