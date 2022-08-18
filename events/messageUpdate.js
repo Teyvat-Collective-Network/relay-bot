@@ -1,4 +1,4 @@
-import { Event } from '@aroleaf/djs-bot';
+import DJS from '@aroleaf/djs-bot';
 import { diffWords } from 'diff';
 
 import * as util from '../lib/util.js';
@@ -11,8 +11,8 @@ const regex = {
   trim: /^(\s*)(.*?)(\s*)$/,
 }
 
-export default new Event({
-  event: 'messageUpdate',
+export default new DJS.Event({
+  event: DJS.Events.MessageUpdate,
 }, async (old, message) => {
   message.channel.webhooks ??= await message.channel.fetchWebhooks?.().catch(() => {});
   if (message.channel.webhooks?.get(message.webhookId)?.owner?.id === message.client.user.id) return;

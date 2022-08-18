@@ -1,4 +1,4 @@
-import { SlashCommand } from '@aroleaf/djs-bot';
+import DJS from '@aroleaf/djs-bot';
 import { template } from 'discord-markdown-embeds';
 
 const embed = template(`
@@ -9,7 +9,7 @@ color: 0x207868
 My ping is {ping}ms
 `);
 
-export default new SlashCommand({
+export default new DJS.SlashCommand({
   name: 'ping',
   description: 'pong!',
 }, interaction => {

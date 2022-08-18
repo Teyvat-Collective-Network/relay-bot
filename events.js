@@ -1,3 +1,3 @@
-import { loader } from '@aroleaf/djs-bot';
+import DJS from '@aroleaf/djs-bot';
 
-export default await loader('events');
+export default await DJS.util.loader('events');

@@ -1,9 +1,8 @@
-import { Event } from '@aroleaf/djs-bot';
+import DJS from '@aroleaf/djs-bot';
 import GlobalManager from '../lib/globalManager.js';
-import telemetry from '../lib/telemetry.js';
 
-export default new Event({
-  event: 'ready',
+export default new DJS.Event({
+  event: DJS.Events.ClientReady,
   repeat: false,
 }, async client => {
   const docs = await client.db.Global.find({});
@@ -14,5 +13,4 @@ export default new Event({
   for (const channel of channels) {
     channel.global = new GlobalManager(channel);
   }
-  telemetry.start();
 });

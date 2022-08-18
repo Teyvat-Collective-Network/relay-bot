@@ -1,8 +1,8 @@
-import { ModalHandler } from '@aroleaf/djs-bot';
+import DJS from '@aroleaf/djs-bot';
 import GlobalManager from '../../lib/globalManager.js';
 import * as util from '../../lib/util.js';
 
-export default new ModalHandler({
+export default new DJS.ModalHandler({
   name: 'modal:connect'
 }, async interaction => {
   const reply = content => interaction.reply({ content, ephemeral: true });

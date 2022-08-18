@@ -1,10 +1,10 @@
-import { Event } from '@aroleaf/djs-bot';
+import DJS from '@aroleaf/djs-bot';
 import GlobalDelete from '../lib/globalDelete.js';
 import GlobalManager from '../lib/globalManager.js';
 import * as util from '../lib/util.js';
 
-export default new Event({
-  event: 'messageDelete',
+export default new DJS.Event({
+  event: DJS.Events.MessageDelete,
 }, async message => {
   util.markDeletedMessage(message);
   const doc = await message.client.db.message(message);

@@ -1,7 +1,7 @@
-import { SlashCommand } from '@aroleaf/djs-bot';
+import DJS from '@aroleaf/djs-bot';
 import getDocument from '../../docs/index.js';
 
-export default new SlashCommand({
+export default new DJS.SlashCommand({
   name: 'help',
   description: 'TCN global bot help pages.',
   options: [{

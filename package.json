@@ -1,14 +1,14 @@
 {
   "name": "tc-global",
   "type": "module",
-  "version": "2.0.0-1",
+  "version": "1.7.1",
   "private": true,
   "decription": "",
   "exports": "./index.js",
   "commands": "./commands.js",
   "license": "MIT",
   "dependencies": {
-    "@aroleaf/djs-bot": "^1.1.0",
+    "@aroleaf/djs-bot": "^2.0.0-pre2",
     "@aroleaf/tcn-api": "^2.3.1",
     "clui": "^0.3.6",
     "diff": "^5.0.0",

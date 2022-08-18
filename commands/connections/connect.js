@@ -1,6 +1,6 @@
-import { SlashCommand } from '@aroleaf/djs-bot';
+import DJS from '@aroleaf/djs-bot';
 
-export default new SlashCommand({
+export default new DJS.SlashCommand({
   name: 'connect',
   description: 'connect to a global channel',
 }, async interaction => {

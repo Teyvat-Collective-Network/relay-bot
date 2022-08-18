@@ -1,6 +1,6 @@
-import { SlashCommand } from '@aroleaf/djs-bot';
+import DJS from '@aroleaf/djs-bot';
 
-export default new SlashCommand({
+export default new DJS.SlashCommand({
   name: 'unpanic',
   description: 'Takes a global channel out of panic mode',
 }, async interaction => {

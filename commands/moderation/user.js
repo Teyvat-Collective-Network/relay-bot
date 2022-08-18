@@ -1,6 +1,6 @@
-import { SlashCommand } from '@aroleaf/djs-bot';
+import DJS from '@aroleaf/djs-bot';
 
-export default new SlashCommand({
+export default new DJS.ContextCommand({
   type: 3,
   name: 'user',
 }, async interaction => {

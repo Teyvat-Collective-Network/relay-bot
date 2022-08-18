@@ -1,12 +1,12 @@
-import { SlashCommand, Permissions } from '@aroleaf/djs-bot';
+import DJS from '@aroleaf/djs-bot';
 
-export default new SlashCommand({
+export default new DJS.SlashCommand({
   name: 'panic',
   description: 'Instantly shuts down an entire global channel in case of emergency',
 }, async interaction => {
   const reply = content => interaction.reply({ content, ephemeral: true });
 
-  if (!interaction.member.permissions.has(Permissions.FLAGS.MANAGE_MESSAGES)) return reply('You are missing the permissions to manage messages.');
+  if (!interaction.member.permissions.has(DJS.PermissionFlagsBits.ManageMessages)) return reply('You are missing the permissions to manage messages.');
 
   const global = await interaction.client.db.subscription(interaction.channel);
   if (!global) return reply('This channel is not connected to a global channel.');
@@ -16,6 +16,6 @@ export default new SlashCommand({
   await reply('This global channel has been put into panic mode.');
 
   return interaction.client.channels.resolve(global.logs || process.env.LOGS)?.send({
-    content: `<@&838703803359559710>, ${interaction.user} enabled panic mode for ${global.name}. Once everything is stable again, use \`/unpanic\` to disable panic mode.`,
+    content: `<@&804177801736618004>, ${interaction.user} enabled panic mode for ${global.name}. Once everything is stable again, use \`/unpanic\` to disable panic mode.`,
   });
 });

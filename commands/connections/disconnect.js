@@ -1,7 +1,7 @@
-import { SlashCommand } from '@aroleaf/djs-bot';
+import DJS from '@aroleaf/djs-bot';
 import * as util from '../../lib/util.js';
 
-export default new SlashCommand({
+export default new DJS.SlashCommand({
   name: 'disconnect',
   description: 'disconnect from a global channel',
 }, async interaction => {

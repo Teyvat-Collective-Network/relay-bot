@@ -1,12 +1,12 @@
-import { Event } from '@aroleaf/djs-bot';
+import DJS from '@aroleaf/djs-bot';
 
 import check from '../filter/check.js';
 import GlobalCreate from '../lib/globalCreate.js';
 import GlobalManager from '../lib/globalManager.js';
 import * as util from '../lib/util.js';
 
-export default new Event({
-  event: 'messageCreate',
+export default new DJS.Event({
+  event: DJS.Events.MessageCreate,
 }, async message => {
   message.channel.webhooks ??= await message.channel.fetchWebhooks?.().catch(() => {});
   if (message.channel.webhooks?.get(message.webhookId)?.owner?.id === message.client.user.id) return;

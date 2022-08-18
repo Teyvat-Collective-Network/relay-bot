@@ -1,11 +1,11 @@
 import * as Discord from '@aroleaf/djs-bot';
-import { Event } from '@aroleaf/djs-bot';
+import DJS from '@aroleaf/djs-bot';
 import { inspect } from 'util';
 
 import * as util from '../lib/util.js';
 
-export default new Event({
-  event: 'messageCreate',
+export default new DJS.Event({
+  event: DJS.Events.MessageCreate,
 }, async message => {
   if (!message.content.startsWith('gb!eval') || message.author.id !== process.env.OWNER) return;
   

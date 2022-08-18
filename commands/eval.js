@@ -1,9 +1,9 @@
 import * as Discord from '@aroleaf/djs-bot';
-import { SlashCommand } from '@aroleaf/djs-bot';
+import DJS from '@aroleaf/djs-bot';
 import * as util from '../lib/util.js';
 import { inspect } from 'util';
 
-export default new SlashCommand({
+export default new DJS.ContextCommand({
   type: 3,
   name: 'eval',
 }, async interaction => {

@@ -1,10 +1,10 @@
-import { Event } from '@aroleaf/djs-bot';
+import DJS from '@aroleaf/djs-bot';
 import GlobalBulkDelete from '../lib/globalBulkDelete.js';
 import GlobalManager from '../lib/globalManager.js';
 import * as util from '../lib/util.js';
 
-export default new Event({
-  event: 'messageDeleteBulk',
+export default new DJS.Event({
+  event: DJS.Events.MessageBulkDelete,
 }, async messages => {
   const client = messages.first().client;
   const global = await client.db.subscription(messages.first().channel);
