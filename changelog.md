@@ -2,6 +2,14 @@
 
 Updates to the scam link list won't be explicitely versioned. The current scam link count is `14762`.
 
+## 1.8
+
+### Discord.js 14
+The framework used to make this bot was updated to use Discord.js 14, so there may be an increased amount of bugs this version.
+
+### Sticker fallback
+0 byte stickers are a thing of the past! There is now a fallback image in case a sticker could not be found or converted.
+
 ## 1.7
 
 ### Panic mode
