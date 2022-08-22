@@ -11,6 +11,8 @@ export default new DJS.Event({
   const docs = (await client.db.messages(messages)).filter(doc => !doc.purged);
   if (!docs.length) return;
 
+  for (const [,msg] of messages) util.markDeletedMessage(msg);
+
   await client.db.Message.updateMany({ _id: { $in: docs.map(doc => doc._id) } }, { purged: true });
 
   const mirrors = [...new Set(docs.map(doc => doc.mirrors.concat(doc.original)).flat())];

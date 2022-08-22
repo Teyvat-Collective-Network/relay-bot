@@ -8,12 +8,15 @@ import * as util from '../lib/util.js';
 export default new DJS.Event({
   event: DJS.Events.MessageCreate,
 }, async message => {
-  message.channel.webhooks ??= await message.channel.fetchWebhooks?.().catch(() => {});
-  if (message.channel.webhooks?.get(message.webhookId)?.owner?.id === message.client.user.id) return;
-
-  if (/(?!<a?:\w+:\d+>)(.{2}|^.?):\w+:/.test(message.content) && await new Promise(resolve => {
-    setTimeout(async () => resolve(util.isDeletedMessage(message)), 2500);
-  })) return;
+  if (message.webhookId) return;
+  
+  // unused while external emotes are bugged
+  // message.channel.webhooks ??= await message.channel.fetchWebhooks?.().catch(() => {});
+  // if (message.channel.webhooks?.get(message.webhookId)?.owner?.id === message.client.user.id) return;
+  //
+  // if (/(?!<a?:\w+:\d+>)(.{2}|^.?):\w+:/.test(message.content) && await new Promise(resolve => {
+  //   setTimeout(async () => resolve(util.isDeletedMessage(message)), 2500);
+  // })) return;
 
   const global = await message.client.db.subscription(message.channel);
   if (!global || global.panic) return;

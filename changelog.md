@@ -2,6 +2,8 @@
 
 Updates to the scam link list won't be explicitely versioned. The current scam link count is `14762`.
 
+
+
 ## 1.8.2
 
 - Fixes embeds not showing up

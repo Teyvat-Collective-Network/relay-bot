@@ -14,8 +14,11 @@ const regex = {
 export default new DJS.Event({
   event: DJS.Events.MessageUpdate,
 }, async (old, message) => {
-  message.channel.webhooks ??= await message.channel.fetchWebhooks?.().catch(() => {});
-  if (message.channel.webhooks?.get(message.webhookId)?.owner?.id === message.client.user.id) return;
+  if (message.webhookId) return;
+  
+  // unused while external emotes are bugged
+  // message.channel.webhooks ??= await message.channel.fetchWebhooks?.().catch(() => {});
+  // if (message.channel.webhooks?.get(message.webhookId)?.owner?.id === message.client.user.id) return;
 
   const global = await message.client.db.subscription(message.channel);
   if (!global || global.panic) return;
