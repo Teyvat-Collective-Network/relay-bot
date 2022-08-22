@@ -2,7 +2,10 @@
 
 Updates to the scam link list won't be explicitely versioned. The current scam link count is `14762`.
 
+## 1.8.3 "Parasite"
 
+Hotfix for a bug where external emotes do not show up using bot-owned webhooks.
+This update requires staff on each connected server to create a user-owned webhook so the global chat can keep supporting external emojis.
 
 ## 1.8.2
 
