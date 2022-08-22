@@ -2,6 +2,15 @@
 
 Updates to the scam link list won't be explicitely versioned. The current scam link count is `14762`.
 
+## 1.8.2
+
+- Fixes embeds not showing up
+- Should make embed edits more stable
+
+## 1.8.1
+
+Fixes a bug where replies don't have any reply info, and instead look like non-reply messages.
+
 ## 1.8
 
 ### Discord.js 14
