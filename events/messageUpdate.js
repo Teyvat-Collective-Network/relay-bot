@@ -35,7 +35,7 @@ export default new Event({
     content: diff,
   }), util.tags.blocked, global).catch(() => {});
 
-  if (old.embeds.filter(e => e.data.type === 'rich').length === message.embeds.filter(e => e.data.type === 'rich').length) return;
+  if (old.embeds.filter(e => e.data.type !== 'rich').length !== message.embeds.filter(e => e.data.type !== 'rich').length) return;
 
   const doc = await message.client.db.message(message);
   if (!doc) return;
