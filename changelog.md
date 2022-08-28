@@ -2,6 +2,10 @@
 
 Updates to the scam link list won't be explicitely versioned. The current scam link count is `14762`.
 
+## 1.8.4
+
+1.8.2 did *not* fix embeds not showing up, this update does.
+
 ## 1.8.3 "Parasite"
 
 Hotfix for a bug where external emotes do not show up using bot-owned webhooks.

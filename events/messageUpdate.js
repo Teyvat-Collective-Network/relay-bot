@@ -1,4 +1,4 @@
-import DJS from '@aroleaf/djs-bot';
+import { Event, Events, MessageType } from '@aroleaf/djs-bot';
 import { diffWords } from 'diff';
 
 import * as util from '../lib/util.js';
@@ -11,10 +11,10 @@ const regex = {
   trim: /^(\s*)(.*?)(\s*)$/,
 }
 
-export default new DJS.Event({
-  event: DJS.Events.MessageUpdate,
+export default new Event({
+  event: Events.MessageUpdate,
 }, async (old, message) => {
-  if (message.webhookId) return;
+  if (message.webhookId && ![MessageType.ChatInputCommand, MessageType.ContextMenuCommand].includes(message.type)) return;
   
   // unused while external emotes are bugged
   // message.channel.webhooks ??= await message.channel.fetchWebhooks?.().catch(() => {});

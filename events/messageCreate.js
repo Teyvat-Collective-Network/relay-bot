@@ -1,14 +1,14 @@
-import DJS from '@aroleaf/djs-bot';
+import { Event, Events, MessageType } from '@aroleaf/djs-bot';
 
 import check from '../filter/check.js';
 import GlobalCreate from '../lib/globalCreate.js';
 import GlobalManager from '../lib/globalManager.js';
 import * as util from '../lib/util.js';
 
-export default new DJS.Event({
-  event: DJS.Events.MessageCreate,
+export default new Event({
+  event: Events.MessageCreate,
 }, async message => {
-  if (message.webhookId) return;
+  if (message.webhookId && ![MessageType.ChatInputCommand, MessageType.ContextMenuCommand].includes(message.type)) return;
   
   // unused while external emotes are bugged
   // message.channel.webhooks ??= await message.channel.fetchWebhooks?.().catch(() => {});
