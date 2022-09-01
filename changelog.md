@@ -2,6 +2,10 @@
 
 Updates to the scam link list won't be explicitely versioned. The current scam link count is `14762`.
 
+## 1.9
+
+Added `/json-doc` to get the JSON of documents the global bot uses. 
+
 ## 1.8.5
 
 edits were completely broken

@@ -5,7 +5,7 @@ thumbnail: https://cdn.discordapp.com/attachments/871008085525819412/87936602992
 
 # Teyvat Collective Network
 
-[teyvatcollective.network](https://teyvatcollective.network 'the TCN website')
+[teyvatcollective.network](https://teyvatcollective.network the TCN website)
 
 > In Teyvat, the stars in the sky will always have a place for you.
 
@@ -45,7 +45,8 @@ Within the network, individual and network-wide events are held such as: tournam
 - [Sara](https://discord.gg/zYkjpsEQMa)
 - [Yae](https://discord.gg/6RFKM446cA)
 
-<!-- #-<:dendro:977274231740059730> -->
+#-<:dendro:977274231740059730>
+- [Tighnari](https://discord.gg/pJGuqx9hMG)
 
 #-<:cryo:977274232461479976>
 - [Aloy](https://discord.gg/XMvnptFtqt)
@@ -68,5 +69,8 @@ Within the network, individual and network-wide events are held such as: tournam
 #-<:other:977277466680909904>
 - [Dainsleif](https://discord.gg/8hdu7758yQ)
 - [Traveler](https://discord.gg/RsdUnupKpj)
+
+#-_ _
+_ _
 
 ![banner](https://i.imgur.com/xLbIXEf.png)
