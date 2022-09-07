@@ -14,11 +14,11 @@ const regex = {
 export default new Event({
   event: Events.MessageUpdate,
 }, async (old, message) => {
-  if (message.webhookId && ![MessageType.ChatInputCommand, MessageType.ContextMenuCommand].includes(message.type)) return;
-  
-  // unused while external emotes are bugged
-  // message.channel.webhooks ??= await message.channel.fetchWebhooks?.().catch(() => {});
-  // if (message.channel.webhooks?.get(message.webhookId)?.owner?.id === message.client.user.id) return;
+  const webhook = message.webhookId && await util.ensureWebhook(message.channel, message.webhookId);
+  if (webhook && !(
+    [MessageType.ChatInputCommand, MessageType.ContextMenuCommand].includes(message.type)
+    || (webhook.owner.bot && webhook.owner.id !== message.client.user.id)
+  )) return;
 
   const global = await message.client.db.subscription(message.channel);
   if (!global || global.panic) return;

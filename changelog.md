@@ -2,6 +2,10 @@
 
 Updates to the scam link list won't be explicitely versioned. The current scam link count is `14762`.
 
+## 1.9.1
+
+Re-enabled webhook messages being relayed for bot webhooks. This should make NQN work again.
+
 ## 1.9
 
 Added `/json-doc` to get the JSON of documents the global bot uses. 
