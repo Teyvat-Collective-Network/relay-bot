@@ -14,6 +14,7 @@
     "diff": "^5.0.0",
     "discord-markdown-embeds": "^2.0.5",
     "dotenv": "^16.0.0",
+    "fzy.js": "^0.4.1",
     "mongoose": "^6.5.2",
     "xregexp": "^5.1.0"
   }
