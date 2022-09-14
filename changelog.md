@@ -1,6 +1,10 @@
 # TCN global relay bot changelog
 
-Updates to the scam link list won't be explicitely versioned. The current scam link count is `14762`.
+Updates to the scam link list won't be explicitely versioned. The current scam link count is `15260`.
+
+## 1.9.3
+
+use autocomplete instead of modal for `/connect`
 
 ## 1.9.2
 
