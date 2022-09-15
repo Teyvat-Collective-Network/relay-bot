@@ -16,6 +16,6 @@ export default new DJS.SlashCommand({
   await reply('This global channel has been put into panic mode.');
 
   return interaction.client.channels.resolve(global.logs || process.env.LOGS)?.send({
-    content: `<@&804177801736618004>, ${interaction.user} enabled panic mode for ${global.name}. Once everything is stable again, use \`/unpanic\` to disable panic mode.`,
+    content: `<@&${process.env.PANIC_ROLE}>, ${interaction.user} enabled panic mode for ${global.name}. Once everything is stable again, use \`/unpanic\` to disable panic mode.`,
   });
 });

@@ -1,4 +1,5 @@
 import Parent from './index.js';
+import * as autocomplete from '../../lib/autocomplete.js';
 import * as util from '../../lib/util.js';
 
 Parent.subcommand({
@@ -9,6 +10,8 @@ Parent.subcommand({
     name: 'name',
     description: 'the name of the global channel you want to change to log channel of',
     required: true,
+    autocomplete: true,
+    onAutocomplete: autocomplete.global,
   }, {
     type: 7,
     channel_types: [0],
@@ -19,8 +22,9 @@ Parent.subcommand({
 }, async interaction => {
   const reply = content => interaction.reply({ content, ephemeral: true });
 
-  const apiUser = interaction.client.tcn.users.get(interaction.user.id);
-  if (!(apiUser.exec || apiUser.observer)) return reply('Sorry, only TCN execs can do that');
+  const tcnData = await util.getTCNData(interaction);
+  if (!tcnData.observer) return reply('Sorry, only TCN execs can do that');
+  
   const global = await interaction.client.db.Global.findOne({ name: interaction.options.getString('name') });
   if (!global) return reply('Sorry, that is not a global channel');
 

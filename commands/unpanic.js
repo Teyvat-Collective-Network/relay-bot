@@ -6,8 +6,8 @@ export default new DJS.SlashCommand({
 }, async interaction => {
   const reply = content => interaction.reply({ content, ephemeral: true });
 
-  const apiUser = interaction.client.tcn.users.get(interaction.user.id);
-  if (!(apiUser.exec || apiUser.observer)) return reply('Only observers are allowed to take a global channel out of panic mode.');
+  const tcnData = await util.getTCNData(interaction);
+  if (!tcnData.observer) return reply('Only observers are allowed to take a global channel out of panic mode.');
 
   const global = await interaction.client.db.subscription(interaction.channel);
   if (!global) return reply('This channel is not connected to a global channel.');

@@ -7,8 +7,8 @@ export default new DJS.SlashCommand({
 }, async interaction => {
   const reply = content => interaction.reply({ content, ephemeral: true });
 
-  const apiUser = interaction.client.tcn.users.get(interaction.user.id);
-  if (!(apiUser.exec || apiUser.observer || interaction.memberPermissions.has(1<<3))) return reply('Sorry, only TCN execs or admins can manage subscriptions');
+  const tcnData = await util.getTCNData(interaction);
+  if (!(tcnData.observer || interaction.memberPermissions.has(1<<3))) return reply('Sorry, only admins or TCN execs can manage subscriptions');
 
   const connection = await interaction.client.db.subscription(interaction.channel);
   if (!connection) return reply('This channel is not connected to any global channel');

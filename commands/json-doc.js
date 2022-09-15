@@ -1,11 +1,11 @@
-import DJS from '@aroleaf/djs-bot';
+import { ApplicationCommandOptionType, SlashCommand } from '@aroleaf/djs-bot';
 import getDocument from '../docs/index.js';
 
-export default new DJS.SlashCommand({
+export default new SlashCommand({
   name: 'json-doc',
-  description: 'Render the global bot\'s doc embeds to JSON',
+  description: 'Render one of the global bot\'s doc embeds to JSON',
   options: [{
-    type: DJS.ApplicationCommandOptionType.String,
+    type: ApplicationCommandOptionType.String,
     name: 'doc',
     description: 'The doc to render',
     required: true,

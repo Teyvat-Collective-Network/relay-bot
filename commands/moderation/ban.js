@@ -13,9 +13,9 @@ export default new DJS.SlashCommand({
 }, async interaction => {
   const reply = content => interaction.reply({ content, ephemeral: true });
 
-  const apiUser = interaction.client.tcn.users.get(interaction.user.id);
-  if (!(apiUser.exec || apiUser.observer)) {
-    if (!interaction.client.tcn.guilds.has(interaction.guild.id)) return reply('Sorry, only partnered server can ban people from global channels.');
+  const tcnData = await util.getTCNData(interaction);
+  if (!tcnData.observer) {
+    if (!tcnData.guild) return reply('Sorry, only partnered server can ban people from global channels.');
     if (!interaction.memberPermissions.has(1n<<2n)) return reply('Sorry, only TCN execs or members with ban permissions can ban users.');
   }
 

@@ -18,7 +18,7 @@ const client = new DJS.Bot({
 });
 
 client.db = db;
-client.tcn = new TCN.Client({ base: process.env.API_URL, secure: !process.env.API_URL?.startsWith('localhost') });
+client.tcn = new TCN(process.env.API_URL, process.env.API_TOKEN);
 client.stickerCache = new StickerCache('cache', 'sticker_fallback.png');
 
 client.login(process.env.TOKEN);

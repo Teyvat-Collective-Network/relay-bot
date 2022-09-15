@@ -7,5 +7,5 @@ Parent.subcommand({
   const reply = content => interaction.reply({ content, ephemeral: true });
 
   const globals = await interaction.client.db.Global.find();
-  return reply(`all global channels: ${globals.map(g=>g.name).join(', ')}`);
+  return reply(`all global channels: ${globals.map(g => `\`${g.name}\``).join(', ')}`);
 });

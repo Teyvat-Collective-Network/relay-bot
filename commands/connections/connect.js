@@ -1,11 +1,7 @@
-import fzy from 'fzy.js';
 import { ApplicationCommandOptionType, SlashCommand } from '@aroleaf/djs-bot';
 import GlobalManager from '../../lib/globalManager.js';
+import * as autocomplete from '../../lib/autocomplete.js';
 import * as util from '../../lib/util.js';
-
-function filter(list, query, map = i => i) {
-  return query ? list.filter(i => fzy.hasMatch(query, map(i))).sort((a, b) => fzy.score(query, map(b)) - fzy.score(query, map(a))) : list;
-}
 
 export default new SlashCommand({
   name: 'connect',
@@ -16,22 +12,15 @@ export default new SlashCommand({
     description: 'the global channel you want to connect to',
     required: true,
     autocomplete: true,
-    onAutocomplete: async interaction => {
-      const globals = await interaction.client.db.Global.find();
-      return interaction.respond(filter(
-        globals,
-        interaction.options.getFocused().toLowerCase(),
-        g => g.name.toLowerCase()
-      ).map(g => ({ name: g.name, value: g.name })).slice(0, 25));
-    },
+    onAutocomplete: autocomplete.global,
   }]
 }, async interaction => {
   const reply = content => interaction.reply({ content, ephemeral: true });
 
-  const apiUser = interaction.client.tcn.users.get(interaction.user.id);
-  if (!(apiUser.exec || apiUser.observer)) {
-    if (!interaction.client.tcn.guilds.has(interaction.guild.id)) return reply('Sorry, only partnered server can connect to global channels.');
-    if (!interaction.memberPermissions.has(1n<<3n)) return reply('Sorry, only TCN execs or admins can manage subscriptions.');
+  const tcnData = await util.getTCNData(interaction);
+  if (!tcnData.observer) {
+    if (!tcnData.guild) return reply('Sorry, only partnered server can connect to global channels.');
+    if (!interaction.memberPermissions.has(1n<<3n)) return reply('Sorry, only admins or TCN observers can manage subscriptions.');
   }
 
   const name = interaction.options.getString('channel');
