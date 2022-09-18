@@ -1,16 +1,16 @@
 ---
-color: 0x207868
-thumbnail: https://cdn.discordapp.com/attachments/871008085525819412/879366029921357884/TCN-removebg-preview.png
+color: 0x2d3136
 ---
+
+![banner](https://i.imgur.com/sDdOtLU.png)
 
 # Teyvat Collective Network
 
 [teyvatcollective.network](https://teyvatcollective.network the TCN website)
 
-> In Teyvat, the stars in the sky will always have a place for you.
+*"In Teyvat, the stars in the sky will always have a place for you."*
 
 A network of high-quality Genshin Impact character-mains style servers that focus on creating fan communities.
-
 Within the network, individual and network-wide events are held such as: tournaments, scavenger hunts and other fun events, community nights, giveaways, and patch preview livestreams.
 
 #-<:pyro:977274232444686366>
@@ -73,4 +73,9 @@ Within the network, individual and network-wide events are held such as: tournam
 #-_ _
 _ _
 
-![banner](https://i.imgur.com/xLbIXEf.png)
+# _ _\
+**TCN Hub**
+
+Join us in the official TCN hub to ask questions about the network, talk to other network members, get information on the network and how to apply, and contact observers (admins)! [discord.gg/tcn](https://discord.gg/tcn)
+
+![spacer](https://i.imgur.com/3yKSBha.png)
