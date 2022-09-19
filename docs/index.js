@@ -11,7 +11,9 @@ export async function getDocument(name) {
   const cached = cache.get(name);
   if (cached?.mtime === stats.mtimeMs) return cached.doc;
 
-  const doc = DME.template(await fs.readFile(fp, 'utf8'));
+  const src = await fs.readFile(fp, 'utf8');
+  const doc = DME.template(src);
+  doc.src = src;
 
   cache.set(name, {
     mtime: stats.mtimeMs,

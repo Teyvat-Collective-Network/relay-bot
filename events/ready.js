@@ -13,4 +13,6 @@ export default new DJS.Event({
   for (const channel of channels) {
     channel.global = new GlobalManager(channel);
   }
+
+  console.log('ready!');
 });
