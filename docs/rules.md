@@ -19,7 +19,7 @@ Leaks are not allowed in the global chat, and should instead be discussed in a c
 ## 4. No drama
 So don't complain about your ban/mute in another server.
 Talking about topics like politics or religion is also discouraged, because they turn into drama fast.
-<!-- If you have a complaint about a TCN server, you can join the [TCN Hub](<invite>) and send a message to our modmail bot. -->
+If you have a complaint about a TCN server, you can join the [TCN Hub](https://discord.gg/tcn) and send a message to our modmail bot.
 
 ## 5. No spam
 This includes server-hopping, sending a message from each server you're hopping to.
