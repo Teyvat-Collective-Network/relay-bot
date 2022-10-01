@@ -1,52 +1,64 @@
 # TCN global relay bot changelog
 
-Updates to the scam link list won't be explicitely versioned. The current scam link count is `15345`.
+Updates to the scam link list won't be explicitely versioned. The current scam link count is `15371`.
+
 
 ## 1.10
 
 Removed `/json-doc` and added its usecase into `/partners` directly.
 
+
 ## 1.9.4
 
 Support the new TCN API.
+
 
 ## 1.9.3
 
 use autocomplete instead of modal for `/connect`
 
+
 ## 1.9.2
 
 Threads AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.
+
 
 ## 1.9.1
 
 Re-enabled webhook messages being relayed for bot webhooks. This should make NQN work again.
 
+
 ## 1.9
 
 Added `/json-doc` to get the JSON of documents the global bot uses. 
+
 
 ## 1.8.5
 
 edits were completely broken
 
+
 ## 1.8.4
 
 1.8.2 did *not* fix embeds not showing up, this update does.
+
 
 ## 1.8.3 "Parasite"
 
 Hotfix for a bug where external emotes do not show up using bot-owned webhooks.
 This update requires staff on each connected server to create a user-owned webhook so the global chat can keep supporting external emojis.
 
+
 ## 1.8.2
 
 - Fixes embeds not showing up
 - Should make embed edits more stable
 
+
 ## 1.8.1
 
 Fixes a bug where replies don't have any reply info, and instead look like non-reply messages.
+
 
 ## 1.8
 
@@ -56,6 +68,7 @@ The framework used to make this bot was updated to use Discord.js 14, so there m
 ### Sticker fallback
 0 byte stickers are a thing of the past! There is now a fallback image in case a sticker could not be found or converted.
 
+
 ## 1.7
 
 ### Panic mode
@@ -64,6 +77,7 @@ Adds two new commands:
 - `/unpanic`: disables panic mode for a global channel
 Panic mode instantly disables most interactions with the global channel panic mode is activated for. This can be useful in case of a raid or similar event.
 Panic mode can be switched on by anyone with MANAGE_MESSAGES permissions, but can only be switched off by TCN observers.
+
 
 ## 1.6
 

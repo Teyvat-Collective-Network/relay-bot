@@ -20,9 +20,16 @@ export default new SlashCommand({
   }],
 }, async interaction => {
   const reply = data => interaction.reply({ ...data, ephemeral: !interaction.options.getBoolean('public') });
-  
+
+  const command =  await interaction.client.application.commands.fetch(interaction.commandId).catch(() => {}) 
+                || await interaction.guild.commands.fetch(interaction.commandId).catch(() => {});
+
   const doc = await getDocument('partners');
-  const render = { content: null, embeds: doc.render({ ul: '➜ ' }), attachments: [] };
+  const render = {
+    content: null,
+    embeds: doc.render({ ul: '➜ ', commands: { partnerCommand: command ? `</${command.name}:${command.id}>` : '`[Command not found]`' } }),
+    attachments: [],
+  };
   
   switch (interaction.options.getString('format') || 'embeds') {
     case 'embeds': return reply(render);

@@ -76,4 +76,7 @@ _ _
 
 Join us in the official TCN hub to ask questions about the network, talk to other network members, get information on the network and how to apply, and contact observers (admins)! [discord.gg/tcn](https://discord.gg/tcn)
 
+# _ _
+**If you think this embed may be outdated, use {partnerCommand} to get an up-to-date version.**
+
 ![spacer](https://i.imgur.com/3yKSBha.png)
