@@ -13,9 +13,10 @@ export default new DJS.SlashCommand({
   if (!global) return reply('This channel is not connected to a global channel.');
 
   await interaction.client.db.unpanic(global);
-  await reply('This global channel has been taken out of panic mode.');
-
-  return interaction.client.channels.resolve(global.logs || process.env.LOGS)?.send({
+  
+  await interaction.client.channels.resolve(global.logs || process.env.LOGS)?.send({
     content: `${interaction.user} disabled panic mode for ${global.name}.`,
-  });
+  }).catch(() => {});
+
+  return reply('This global channel has been taken out of panic mode.');
 });

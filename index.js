@@ -1,18 +1,16 @@
-import DJS from '@aroleaf/djs-bot';
+import { Bot, util } from '@aroleaf/djs-bot';
 import TCN from '@aroleaf/tcn-api';
 import 'dotenv/config';
-
-import commands from './commands.js';
-import events from './events.js';
 
 import * as db from './db/index.js';
 import StickerCache from './lib/stickerCache.js';
 
-const client = new DJS.Bot({
-  commands, events,
+const client = new Bot({
+  commands: await util.loader('commands'),
+  events: await util.loader('events'),
   intents: [1<<0, 1<<5, 1<<9, 1<<15],
   register: {
-    global: process.env.PRODUCTION,
+    global: !!process.env.PRODUCTION,
     guilds: ['838473416310652998'],
   },
 });

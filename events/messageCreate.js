@@ -21,7 +21,7 @@ export default new Event({
   const global = await message.client.db.subscription(message.channel);
   if (!global || global.panic) return;
 
-  if (global.bans.includes(message.author.id)) message.delete().catch(() => {});
+  if (global.bans.includes(message.author.id)) return message.delete().catch(() => {});
   if(check(message.content)) {
     await message.delete().catch(() => {});
     return util.log(message, util.tags.blocked, global).catch(() => {});
