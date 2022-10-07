@@ -1,4 +1,5 @@
 import DJS from '@aroleaf/djs-bot';
+import { getTCNData } from '../lib/util.js';
 
 export default new DJS.SlashCommand({
   name: 'unpanic',
@@ -6,7 +7,7 @@ export default new DJS.SlashCommand({
 }, async interaction => {
   const reply = content => interaction.reply({ content, ephemeral: true });
 
-  const tcnData = await util.getTCNData(interaction);
+  const tcnData = await getTCNData(interaction);
   if (!tcnData.observer) return reply('Only observers are allowed to take a global channel out of panic mode.');
 
   const global = await interaction.client.db.subscription(interaction.channel);

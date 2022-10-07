@@ -1,4 +1,5 @@
 import DJS from '@aroleaf/djs-bot';
+import { getTCNData } from '../lib/util.js';
 
 export default new DJS.SlashCommand({
   name: 'panic',
@@ -6,7 +7,8 @@ export default new DJS.SlashCommand({
 }, async interaction => {
   const reply = content => interaction.reply({ content, ephemeral: true }).catch(() => {});
 
-  if (!interaction.member.permissions.has(DJS.PermissionFlagsBits.ManageMessages)) return reply('You are missing the permissions to manage messages.');
+  const tcnData = await getTCNData(interaction);
+  if (!tcnData.observer && !interaction.member.permissions.has(DJS.PermissionFlagsBits.ManageMessages)) return reply('You are missing the permissions to manage messages.');
 
   const global = await interaction.client.db.subscription(interaction.channel);
   if (!global) return reply('This channel is not connected to a global channel.');
