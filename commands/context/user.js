@@ -2,7 +2,7 @@ import { ContextCommand } from '@aroleaf/djs-bot';
 
 export default new ContextCommand({
   type: 3,
-  name: 'user',
+  name: 'user ',
 }, async interaction => {
   const reply = content => interaction.reply({ content, ephemeral: true });
 

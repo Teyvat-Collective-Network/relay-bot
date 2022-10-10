@@ -13,7 +13,7 @@ export default new SlashCommand({
   const reply = content => interaction.reply({ content, ephemeral: true });
 
   const messageId = interaction.options.getString('message')?.match(/(\d+)\/?/)?.[1];
-  const doc = message && await interaction.client.db.Message.findOne({ $or: [ { 'original.message': messageId }, { 'mirrors.message': messageId } ] });
+  const doc = messageId && await interaction.client.db.Message.findOne({ $or: [ { 'original.message': messageId }, { 'mirrors.message': messageId } ] });
 
   if (!doc) return reply('Sorry, I couldn\'t find that message.');
   return reply(`<@${doc.author}> (${doc.author})`);

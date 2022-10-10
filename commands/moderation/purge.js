@@ -8,14 +8,15 @@ export default new SlashCommand({
     type: ApplicationCommandOptionType.String,
     name: 'message',
     description: 'the id or link of the message you want to force-purge',
-  }]
+    required: true,
+  }],
 }, async interaction => {
   await interaction.deferReply({ ephemeral: true });
   const reply = content => interaction.editReply({ content });
   
   const messageId = interaction.options.getString('message');
   
-  const doc = await interaction.client.db.Message.findOne({ $or: [ { 'original.message': message.id }, { 'mirrors.message': message.id } ] });
+  const doc = await interaction.client.db.Message.findOne({ $or: [ { 'original.message': messageId }, { 'mirrors.message': messageId } ] });
   const mirror = doc?.mirrors.concat(doc.original).find(m => m.message === messageId);
   
   const message = mirror && await interaction.client.channels.resolve(mirror.channel)?.messages.fetch(mirror.message);
