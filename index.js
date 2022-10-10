@@ -1,4 +1,4 @@
-import { Bot, util } from '@aroleaf/djs-bot';
+import { Bot, Partials, util } from '@aroleaf/djs-bot';
 import TCN from '@aroleaf/tcn-api';
 import 'dotenv/config';
 
@@ -9,6 +9,7 @@ const client = new Bot({
   commands: await util.loader('commands'),
   events: await util.loader('events'),
   intents: [1<<0, 1<<5, 1<<9, 1<<15],
+  partials: [Partials.Message],
   register: {
     global: !!process.env.PRODUCTION,
     guilds: ['838473416310652998'],

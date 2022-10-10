@@ -1,17 +1,15 @@
-import DJS from '@aroleaf/djs-bot';
+import { Event, Events } from '@aroleaf/djs-bot';
 import GlobalDelete from '../lib/globalDelete.js';
 import GlobalManager from '../lib/globalManager.js';
 import * as util from '../lib/util.js';
 
-export default new DJS.Event({
-  event: DJS.Events.MessageDelete,
+export default new Event({
+  event: Events.MessageDelete,
 }, async message => {
   util.markDeletedMessage(message);
   const doc = await message.client.db.message(message);
   if (!doc || doc.purged) return;
   const global = await message.client.db.subscription(message.channel);
-
-  if (global?.panic) return;
 
   await doc.updateOne({ purged: true });
   

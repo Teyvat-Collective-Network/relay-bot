@@ -14,6 +14,11 @@ const regex = {
 export default new Event({
   event: Events.MessageUpdate,
 }, async (old, message) => {
+  if (message.partial) {
+    const fetched = await message.fetch().catch(() => {});
+    if (!fetched) return;
+  }
+
   const webhook = message.webhookId && await util.ensureWebhook(message.channel, message.webhookId);
   if (webhook && !(
     [MessageType.ChatInputCommand, MessageType.ContextMenuCommand].includes(message.type)
