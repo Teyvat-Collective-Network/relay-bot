@@ -76,6 +76,11 @@ _ _
 
 Join us in the official TCN hub to ask questions about the network, talk to other network members, get information on the network and how to apply, and contact observers (admins)! [discord.gg/tcn](https://discord.gg/tcn)
 
+# _ _\
+**Genshin Wizard**
+
+The TCN is partnered with [Genshin Wizard](https://genshinwizard.com/), a multipurpose Genshin Impact Discord bot with a wide array of features to let you view your in-game stats, flex your builds, view build guides and hundreds of high-quality infographics, and more!
+
 # _ _
 **If you think this embed may be outdated, use {partnerCommand} to get an up-to-date version.**
 

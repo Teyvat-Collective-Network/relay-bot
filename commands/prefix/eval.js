@@ -1,14 +1,10 @@
-import * as Discord from '@aroleaf/djs-bot';
-import DJS from '@aroleaf/djs-bot';
-import { inspect } from 'util';
+import { PrefixCommand } from '@aroleaf/djs-bot';
+import { CommandFlagsBitField } from '@aroleaf/djs-bot';
 
-import * as util from '../lib/util.js';
-
-export default new DJS.Event({
-  event: DJS.Events.MessageCreate,
+export default new PrefixCommand({
+  name: 'eval',
+  flags: [CommandFlagsBitField.Flags.OWNER_ONLY],
 }, async message => {
-  if (!message.content.startsWith('gb!eval') || message.author.id !== process.env.OWNER) return;
-  
   const codeblocks = message.content.split(/```(?:js|javascript)?(.+?)```/sg).filter((_,i) => i%2);
   if (!codeblocks.length) return reply('No code found');
 
@@ -37,8 +33,9 @@ export default new DJS.Event({
     numericSeparator: true,
   });
   
-  return message.channel.send({
+  return message.reply({
     content: '**eval results**' + (out.length <= 1970 ? `\`\`\`ansi\n${out}\n\`\`\`` : ''),
     files: out.length > 1984 ? [{ name: 'results.ansi', attachment: Buffer.from(out) }] : [],
+    allowedMentions: { repliedUser: false },
   });
 });

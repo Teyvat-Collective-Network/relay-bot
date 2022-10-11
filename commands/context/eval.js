@@ -1,6 +1,6 @@
 import * as Discord from '@aroleaf/djs-bot';
 import DJS from '@aroleaf/djs-bot';
-import * as util from '../lib/util.js';
+import * as util from '../../lib/util.js';
 import { inspect } from 'util';
 
 export default new DJS.ContextCommand({
