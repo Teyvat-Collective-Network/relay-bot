@@ -9,7 +9,7 @@ export default new DJS.Event({
 }, async message => {
   if (!message.content.startsWith('gb!eval') || message.author.id !== process.env.OWNER) return;
   
-  const codeblocks = message.content.split(/```(?:js)?(.+?)```/sg).filter((_,i) => i%2);
+  const codeblocks = message.content.split(/```(?:js|javascript)?(.+?)```/sg).filter((_,i) => i%2);
   if (!codeblocks.length) return reply('No code found');
 
   const env = {
