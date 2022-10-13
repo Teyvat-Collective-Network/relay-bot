@@ -1,15 +1,15 @@
-import * as Discord from '@aroleaf/djs-bot';
-import DJS from '@aroleaf/djs-bot';
-import * as util from '../../lib/util.js';
+import { ContextCommand } from '@aroleaf/djs-bot';
 import { inspect } from 'util';
+import * as Discord from '@aroleaf/djs-bot';
+import * as util from '../../lib/util.js';
 
-export default new DJS.ContextCommand({
+export default new ContextCommand({
   type: 3,
   name: 'eval',
 }, async interaction => {
   const reply = content => interaction.reply({ content, ephemeral: true });
   
-  if (interaction.user.id !== process.env.OWNER) return reply('You are not allowed to use `eval`');
+  if (!interaction.client.owners.includes(interaction.user.id)) return reply('You are not allowed to use `eval`');
   
   const message = interaction.options.resolved.messages.first();
   const codeblocks = message.content.split(/```(?:js)?(.+?)```/sg).filter((_,i) => i%2);

@@ -6,8 +6,10 @@ import * as db from './db/index.js';
 import StickerCache from './lib/stickerCache.js';
 
 const client = new Bot({
+  owner: process.env.OWNER,
   commands: await util.loader('commands'),
   events: await util.loader('events'),
+  prefix: 'gb!',
   intents: [1<<0, 1<<5, 1<<9, 1<<15],
   partials: [Partials.Message],
   register: {

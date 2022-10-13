@@ -1,5 +1,8 @@
 import { PrefixCommand } from '@aroleaf/djs-bot';
 import { CommandFlagsBitField } from '@aroleaf/djs-bot';
+import { inspect } from 'util';
+import * as Discord from '@aroleaf/djs-bot';
+import * as util from '../../lib/util.js';
 
 export default new PrefixCommand({
   name: 'eval',
