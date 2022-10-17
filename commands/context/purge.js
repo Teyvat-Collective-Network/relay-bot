@@ -3,7 +3,7 @@ import { getTCNData, purgeMessage } from '../../lib/util.js';
 
 export default new ContextCommand({
   type: 3,
-  name: 'purge ',
+  name: 'purge',
 }, async interaction => {
   await interaction.deferReply({ ephemeral: true });
   const reply = content => interaction.editReply({ content });
