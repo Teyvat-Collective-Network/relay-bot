@@ -13,6 +13,16 @@ color: 0x2d3136
 A network of high-quality Genshin Impact character-mains style servers that focus on creating fan communities.
 Within the network, individual and network-wide events are held such as: tournaments, scavenger hunts and other fun events, community nights, giveaways, and patch preview livestreams.
 
+#-<:electro:977274232419536906>
+- [Beidou](https://discord.gg/rgS2f9dBxb)
+- [Cyno](https://discord.gg/CH3Mz4SAGW)
+- [Fischl](https://discord.gg/JSN9Rk2sWe)
+- [Lisa](https://discord.gg/5SYy4MPPCt)
+- [Raiden](https://discord.gg/Qfw4m2AbRM)
+- [Razor](https://discord.gg/4BzHdAzHGR)
+- [Sara](https://discord.gg/zYkjpsEQMa)
+- [Yae](https://discord.gg/6RFKM446cA)
+
 #-<:pyro:977274232444686366>
 - [Bennett](https://discord.gg/qrjeEyejsd)
 - [Diluc](https://discord.gg/kXkaJ9585q)
@@ -21,15 +31,6 @@ Within the network, individual and network-wide events are held such as: tournam
 - [Xiangling](https://discord.gg/7ybnnQXxyS)
 - [Xinyan](https://discord.gg/XQkAKTXbNQ)
 - [Yoimiya](https://discord.gg/qr2QvucFcC)
-
-#-<:electro:977274232419536906>
-- [Beidou](https://discord.gg/rgS2f9dBxb)
-- [Fischl](https://discord.gg/JSN9Rk2sWe)
-- [Lisa](https://discord.gg/5SYy4MPPCt)
-- [Raiden](https://discord.gg/Qfw4m2AbRM)
-- [Razor](https://discord.gg/4BzHdAzHGR)
-- [Sara](https://discord.gg/zYkjpsEQMa)
-- [Yae](https://discord.gg/6RFKM446cA)
 
 #-<:cryo:977274232461479976>
 - [Ayaka](https://discord.gg/q8XSUhfG5W)
