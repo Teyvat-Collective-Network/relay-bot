@@ -1,2 +1,3 @@
 <@!?\d+> has leveled up!; tatsu level message
-Can someone test my first game?; scaaaaam
+Can someone test my first game\?; scaaaaam
+Welcome back, <@!?\d+>, I removed your AFK\.
