@@ -11,7 +11,7 @@ const compiled = (await compileRegexes([
 
 async function compileScams(source) {
   const data = await fs.readFile(path.resolve(source), 'utf-8');
-  return JSON.parse(data).map(scam => XRegExp(`(^|\\w)(https?://)?${XRegExp.escape(scam)}([\\w/]|$)`, 'in'));
+  return JSON.parse(data).map(scam => XRegExp(`(^|\\W)(https?://)?${XRegExp.escape(scam)}([\\W/]|$)`, 'in'));
 }
 
 async function compileRegexes(sources) {
