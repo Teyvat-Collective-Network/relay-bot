@@ -62,12 +62,13 @@ Within the network, individual and network-wide events are held such as: tournam
 - [Yun Jin](https://discord.gg/KSAe7tcY93)
 - [Zhongli](https://discord.gg/3h5uepPXKr)
 
+#-<:dendro:977274231740059730>
+- [Al-Haitham](https://discord.gg/vsqHb5jM64)
+- [Tighnari](https://discord.gg/pJGuqx9hMG)
+
 #-<:other:977277466680909904>
 - [Dainsleif](https://discord.gg/8hdu7758yQ)
 - [Traveler](https://discord.gg/RsdUnupKpj)
-
-#-<:dendro:977274231740059730>
-- [Tighnari](https://discord.gg/pJGuqx9hMG)
 
 #-_ _
 _ _
