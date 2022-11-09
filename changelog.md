@@ -3,6 +3,11 @@
 Updates to the scam link list won't be explicitely versioned. The current scam link count is `16291`.
 
 
+## 1.11.1
+
+Fixed nicknames, they show up again.
+
+
 ## 1.11
 
 - Added the `purge` message command, to force-purge a message.
