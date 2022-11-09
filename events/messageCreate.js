@@ -14,11 +14,11 @@ export default new Event({
   }
 
   const webhook = message.webhookId && await util.ensureWebhook(message.channel, message.webhookId);
-  if (webhook && !(
-    [MessageType.ChatInputCommand, MessageType.ContextMenuCommand].includes(message.type)
-    || (webhook.owner.bot && webhook.owner.id !== message.client.user.id)
-  )) return;
-  
+  if (webhook
+    && ![MessageType.ChatInputCommand, MessageType.ContextMenuCommand].includes(message.type)
+    && (!webhook.owner.bot || webhook.owner.id === message.client.user.id)
+  ) return;
+
   if (/(?!<a?:\w+:\d+>)(.{2}|^.?):\w+:/.test(message.content) && await new Promise(resolve => {
     setTimeout(async () => resolve(util.isDeletedMessage(message)), 2500);
   })) return;

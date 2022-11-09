@@ -40,6 +40,14 @@ Within the network, individual and network-wide events are held such as: tournam
 - [Qiqi](https://discord.gg/wcZ69vg2KY)
 - [Shenhe](https://discord.gg/TZ9tpJMU5F)
 
+#-<:hydro:977274232520183918>
+- [Barbara](https://discord.gg/6vVQcsrAgN)
+- [Candace](https://discord.gg/vhg27QdEGM)
+- [Kokomi](https://discord.gg/ErHp3BnFkg)
+- [Mona](https://discord.gg/wVERTRUNBx)
+- [Nilou](https://discord.gg/RGnawuSV3J)
+- [Xingqiu](https://discord.gg/5MKsJyhkQv)
+
 #-<:anemo:977274485835198494>
 - [Jean](https://discord.gg/fSw9xXSyTe)
 - [Kazuha](https://discord.gg/S8uWtzECEW)
@@ -47,13 +55,6 @@ Within the network, individual and network-wide events are held such as: tournam
 - [Sucrose](https://discord.gg/SRgmCt4)
 - [Venti](https://discord.gg/zneUYpbgPQ)
 - [Xiao](https://discord.gg/u5QS2tRHm6)
-
-#-<:hydro:977274232520183918>
-- [Barbara](https://discord.gg/6vVQcsrAgN)
-- [Candace](https://discord.gg/vhg27QdEGM)
-- [Kokomi](https://discord.gg/ErHp3BnFkg)
-- [Mona](https://discord.gg/wVERTRUNBx)
-- [Xingqiu](https://discord.gg/5MKsJyhkQv)
 
 #-<:geo:977274232356622386>
 - [Gorou](https://discord.gg/NeDba9DQU4)
