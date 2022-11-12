@@ -13,6 +13,16 @@ color: 0x2d3136
 A network of high-quality Genshin Impact character-mains style servers that focus on creating fan communities.
 Within the network, individual and network-wide events are held such as: tournaments, scavenger hunts and other fun events, community nights, giveaways, and patch preview livestreams.
 
+#-<:cryo:977274232461479976>
+- [Ayaka](https://discord.gg/q8XSUhfG5W)
+- [Chongyun](https://discord.gg/FT4ZFmgf8T)
+- [Diona](https://discord.gg/JkeJWTtzGT)
+- [Kaeya's Cavalry](https://discord.gg/SZe5HJfujv)
+- [Kaeya Mains](https://discord.gg/WQzCpybycn)
+- [Layla](https://discord.gg/5YsP4UwdQt)
+- [Qiqi](https://discord.gg/wcZ69vg2KY)
+- [Shenhe](https://discord.gg/TZ9tpJMU5F)
+
 #-<:pyro:977274232444686366>
 - [Bennett](https://discord.gg/qrjeEyejsd)
 - [Diluc](https://discord.gg/kXkaJ9585q)
@@ -30,15 +40,6 @@ Within the network, individual and network-wide events are held such as: tournam
 - [Razor](https://discord.gg/4BzHdAzHGR)
 - [Sara](https://discord.gg/zYkjpsEQMa)
 - [Yae](https://discord.gg/6RFKM446cA)
-
-#-<:cryo:977274232461479976>
-- [Ayaka](https://discord.gg/q8XSUhfG5W)
-- [Chongyun](https://discord.gg/FT4ZFmgf8T)
-- [Diona](https://discord.gg/JkeJWTtzGT)
-- [Kaeya's Cavalry](https://discord.gg/SZe5HJfujv)
-- [Kaeya Mains](https://discord.gg/WQzCpybycn)
-- [Qiqi](https://discord.gg/wcZ69vg2KY)
-- [Shenhe](https://discord.gg/TZ9tpJMU5F)
 
 #-<:hydro:977274232520183918>
 - [Barbara](https://discord.gg/6vVQcsrAgN)

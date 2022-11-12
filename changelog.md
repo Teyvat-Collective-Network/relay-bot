@@ -26,7 +26,7 @@ Support the new TCN API.
 
 ## 1.9.3
 
-use autocomplete instead of modal for `/connect`
+Use autocomplete instead of modal for `/connect`.
 
 
 ## 1.9.2
