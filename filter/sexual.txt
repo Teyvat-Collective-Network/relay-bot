@@ -18,13 +18,13 @@
 \bbuttnugget\b
 \bbuttplug\b
 \bchickswithdicks\b
-\bc[o0]c(k(omi)?)?\b; cock(omi)
+\bc[o0]c(k(omi)?)?\b; cock/cockomi
 \bchoa?d(es?)?\b; chode
 \bcl[i1]t[so]?(ty|r[iu]s)?; clitoris
 \bcrackwhore\b
 \bcreampie\b
 \bcum(ming)?\b
-s[e3](x|gg?s); sex
+\bs[e3](x|gg?s)(ual)?\b; sex
 \bdeep[- ]?throat\b
 \bdickcheese\b
 \bdildo\b
@@ -38,7 +38,7 @@ s[e3](x|gg?s); sex
 \bgloryhole\b
 \bg[- ]?spot\b
 \bhan[gd]job\b
-\bhard[- ]?on\b
+\bhard[-]?on\b
 \bh(en)?ta?i\b; hentai
 \bherpes\b
 \bhooker\b
@@ -61,7 +61,7 @@ s[e3](x|gg?s); sex
 \bprostitution\b
 \bpub(i[sc]|es?)\b; pubes
 \bpu(ta|ss(y|ies?))\b; pussy
-\br[a@4*]p(ed?|ing|ist); rape
+\br[a@4*]p(ed?|ing|ist); rape/rapist
 \brectum\b
 \brimjob\b
 \br(ule)?34\b

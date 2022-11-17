@@ -16,5 +16,5 @@
 \chin([ck]|g[- ]?chong)\b
 \bbuftie\b
 \bgook\b
-\bspic\b(?! (and|en) span)
+\bspic\b
 \bjiggaboo\b
