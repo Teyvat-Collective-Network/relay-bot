@@ -61,7 +61,7 @@
 \bprostitution\b
 \bpub(i[sc]|es?)\b; pubes
 \bpu(ta|ss(y|ies?))\b; pussy
-\br[a@4*]p(ed?|ing|ist); rape/rapist
+\br[a@4*]p(ed?|ing|ist)\b; rape/rapist
 \brectum\b
 \brimjob\b
 \br(ule)?34\b
