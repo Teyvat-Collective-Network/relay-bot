@@ -32,15 +32,6 @@ Within the network, individual and network-wide events are held such as: tournam
 - [Xinyan](https://discord.gg/XQkAKTXbNQ)
 - [Yoimiya](https://discord.gg/qr2QvucFcC)
 
-#-<:electro:977274232419536906>
-- [Beidou](https://discord.gg/rgS2f9dBxb)
-- [Cyno](https://discord.gg/CH3Mz4SAGW)
-- [Fischl](https://discord.gg/JSN9Rk2sWe)
-- [Lisa](https://discord.gg/5SYy4MPPCt)
-- [Razor](https://discord.gg/4BzHdAzHGR)
-- [Sara](https://discord.gg/zYkjpsEQMa)
-- [Yae](https://discord.gg/6RFKM446cA)
-
 #-<:hydro:977274232520183918>
 - [Barbara](https://discord.gg/6vVQcsrAgN)
 - [Candace](https://discord.gg/vhg27QdEGM)
@@ -56,6 +47,14 @@ Within the network, individual and network-wide events are held such as: tournam
 - [Sucrose](https://discord.gg/SRgmCt4)
 - [Venti](https://discord.gg/zneUYpbgPQ)
 - [Xiao](https://discord.gg/u5QS2tRHm6)
+
+#-<:electro:977274232419536906>
+- [Beidou](https://discord.gg/rgS2f9dBxb)
+- [Cyno](https://discord.gg/CH3Mz4SAGW)
+- [Fischl](https://discord.gg/JSN9Rk2sWe)
+- [Lisa](https://discord.gg/5SYy4MPPCt)
+- [Sara](https://discord.gg/zYkjpsEQMa)
+- [Yae](https://discord.gg/6RFKM446cA)
 
 #-<:geo:977274232356622386>
 - [Gorou](https://discord.gg/NeDba9DQU4)
