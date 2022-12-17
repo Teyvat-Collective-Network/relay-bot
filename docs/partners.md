@@ -65,6 +65,7 @@ Within the network, individual and network-wide events are held such as: tournam
 
 #-<:dendro:977274231740059730>
 - [Al-Haitham](https://discord.gg/vsqHb5jM64)
+- [Nahida](https://discord.gg/BNVaUy78mn)
 - [Tighnari](https://discord.gg/pJGuqx9hMG)
 
 #-<:other:977277466680909904>
