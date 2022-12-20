@@ -1,4 +1,4 @@
-heil[- ]?hitler
-nazi(sm?)?
+\bheil[- ]?hitler\b
+\bnazi(sm?)?\b
 \bk\.?y\.?s\.?\b; kys
 \bkill yourself\b

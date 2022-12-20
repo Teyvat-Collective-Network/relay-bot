@@ -26,6 +26,7 @@ async function compileRegexes(sources) {
 export function check(text) {
   for (const regex of compiled) {
     if (regex.test(text)) {
+      console.log(regex);
       return true;
     }
   }
