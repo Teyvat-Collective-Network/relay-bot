@@ -3,6 +3,16 @@
 Updates to the scam link list won't be explicitely versioned. The current scam link count is `16916`.
 
 
+## 1.12
+
+- Split `/purge` into `/purge message` and `/purge user`:
+  - `/purge message` is what used to be `/purge`
+  - `/purge user` allows you to purge recent messages sent by one user
+- Users now need to be in a server for 30 minutes before they're allowed to use global chats from that server.
+
+Proper anti-spam features are a soon™
+
+
 ## 1.11.1
 
 Fixed nicknames, they show up again.

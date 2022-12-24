@@ -23,11 +23,11 @@ async function compileRegexes(sources) {
   return regexes.flat().map(regex => XRegExp(regex.split(';')[0], 'in'));
 }
 
-export function check(text) {
+export default function check(text) {
   for (const regex of compiled) {
     if (regex.test(text)) {
       return true;
     }
   }
   return false;
-} export default check;
+}

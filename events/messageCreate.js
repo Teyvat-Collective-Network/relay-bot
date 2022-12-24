@@ -13,12 +13,14 @@ export default new Event({
     if (!fetched) return;
   }
 
+  // make sure it can't be its own message
   const webhook = message.webhookId && await util.ensureWebhook(message.channel, message.webhookId);
   if (webhook
     && ![MessageType.ChatInputCommand, MessageType.ContextMenuCommand].includes(message.type)
     && (!webhook.owner.bot || webhook.owner.id === message.client.user.id)
   ) return;
 
+  // wait for potential NQN deletions
   if (/(?!<a?:\w+:\d+>)(.{2}|^.?):\w+:/.test(message.content) && await new Promise(resolve => {
     setTimeout(async () => resolve(util.isDeletedMessage(message)), 2500);
   })) return;
@@ -26,6 +28,14 @@ export default new Event({
   const global = await message.client.db.subscription(message.channel);
   if (!global || global.panic) return;
 
+  // require users to be a member of a server for at least 30 minutes before they can use the global chat there
+  const THIRTY_MINUTES = 30 * 60 * 1000;
+  if (!(message.member?.joinedTimestamp + THIRTY_MINUTES < Date.now())) {
+    await message.delete().catch(() => {});
+    return message.author.send('You joined that server too recently to use the global chat.').catch(() => {});
+  }
+
+  // check if the author is banned, or the message contains disallowed content
   if (global.bans.includes(message.author.id)) return message.delete().catch(() => {});
   if(check(message.content)) {
     await message.delete().catch(() => {});

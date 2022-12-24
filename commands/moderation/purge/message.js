@@ -1,8 +1,10 @@
-import { ApplicationCommandOptionType, PermissionFlagsBits, SlashCommand, util } from '@aroleaf/djs-bot';
-import { getTCNData, purgeMessage } from '../../lib/util.js';
+import { ApplicationCommandOptionType, PermissionFlagsBits } from '@aroleaf/djs-bot';
+import { getTCNData, purgeMessage } from '../../../lib/util.js';
 
-export default new SlashCommand({
-  name: 'purge',
+import parent from './index.js';
+
+parent.subcommand({
+  name: 'message',
   description: 'force-purge a global chat message',
   options: [{
     type: ApplicationCommandOptionType.String,
