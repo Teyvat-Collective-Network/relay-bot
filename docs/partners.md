@@ -44,7 +44,7 @@ A network of high-quality Genshin Impact character-mains style servers that focu
 - [Fischl](https://discord.gg/JSN9Rk2sWe)
 - [Lisa](https://discord.gg/5SYy4MPPCt)
 - [Sara](https://discord.gg/zYkjpsEQMa)
-- [Yae](https://discord.gg/6RFKM446cA
+- [Yae](https://discord.gg/6RFKM446cA)
 
 #-<:cryo:977274232461479976>
 - [Chongyun](https://discord.gg/FT4ZFmgf8T)
