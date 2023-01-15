@@ -49,7 +49,7 @@ A network of high-quality Genshin Impact character-mains style servers that focu
 #-<:cryo:977274232461479976>
 - [Chongyun](https://discord.gg/FT4ZFmgf8T)
 - [Diona](https://discord.gg/JkeJWTtzGT)
-- [Kaeya Mains](https://discord.gg/WQzCpybycn)
+- [Kaeya](https://discord.gg/WQzCpybycn)
 - [Layla](https://discord.gg/5YsP4UwdQt)
 - [Qiqi](https://discord.gg/wcZ69vg2KY)
 - [Shenhe](https://discord.gg/TZ9tpJMU5F)
