@@ -15,8 +15,8 @@ A network of high-quality Genshin Impact character-mains style servers that focu
 
 #-<:pyro:977274232444686366>
 - [Bennett](https://discord.gg/qrjeEyejsd)
-- [Diluc](https://discord.gg/kXkaJ9585q)
 - [Dehya](https://discord.gg/7ereaRuxzV)
+- [Diluc](https://discord.gg/kXkaJ9585q)
 - [Klee](https://discord.gg/NwYDDrfKZU)
 - [Thoma](https://discord.gg/djapjnyy3s)
 - [Xiangling](https://discord.gg/7ybnnQXxyS)
