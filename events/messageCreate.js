@@ -30,7 +30,7 @@ export default new Event({
 
   // require users to be a member of a server for at least 30 minutes before they can use the global chat there
   const THIRTY_MINUTES = 30 * 60 * 1000;
-  if (!(message.member?.joinedTimestamp + THIRTY_MINUTES < Date.now())) {
+  if (Date.now() - THIRTY_MINUTES < message.member?.joinedTimestamp) {
     await message.delete().catch(() => {});
     return message.author.send('You joined that server too recently to use the global chat.').catch(() => {});
   }
