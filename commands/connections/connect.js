@@ -13,7 +13,7 @@ export default new SlashCommand({
     required: true,
     autocomplete: true,
     onAutocomplete: autocomplete.global,
-  }]
+  }],
 }, async interaction => {
   const reply = content => interaction.reply({ content, ephemeral: true });
 
@@ -22,6 +22,14 @@ export default new SlashCommand({
     if (!tcnData.guild) return reply('Sorry, only partnered server can connect to global channels.');
     if (!interaction.memberPermissions.has(1n<<3n)) return reply('Sorry, only admins or TCN observers can manage subscriptions.');
   }
+
+  if (!interaction.channel.permissionsFor(interaction.client.user).has([
+    PermissionFlagsBits.ViewChannel,
+    PermissionFlagsBits.ReadMessageHistory,
+    PermissionFlagsBits.ManageWebhooks,
+    PermissionFlagsBits.SendMessages,
+    PermissionFlagsBits.ManageMessages,
+  ])) return reply('Sorry, I need the following permissions to connect to this channel: View Channel, Read Message History, Manage Webhooks, Send Messages, and Manage Messages.');
 
   const name = interaction.options.getString('channel');
 
