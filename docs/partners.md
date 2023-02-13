@@ -23,6 +23,15 @@ A network of high-quality Genshin Impact character-mains style servers that focu
 - [Xinyan](https://discord.gg/XQkAKTXbNQ)
 - [Yoimiya](https://discord.gg/qr2QvucFcC)
 
+#-<:hydro:977274232520183918>
+- [Barbara](https://discord.gg/6vVQcsrAgN)
+- [Candace](https://discord.gg/vhg27QdEGM)
+- [Kokomi](https://discord.gg/ErHp3BnFkg)
+- [Mona](https://discord.gg/wVERTRUNBx)
+- [Nilou](https://discord.gg/RGnawuSV3J)
+- [Xingqiu](https://discord.gg/5MKsJyhkQv)
+- [Yelan](https://discord.gg/hY9E2wHXTj)
+
 #-<:anemo:977274485835198494>
 - [Faruzan](https://discord.gg/FUrDkrbbjd)
 - [Jean](https://discord.gg/fSw9xXSyTe)
@@ -31,14 +40,6 @@ A network of high-quality Genshin Impact character-mains style servers that focu
 - [Sucrose](https://discord.gg/SRgmCt4)
 - [Venti](https://discord.gg/zneUYpbgPQ)
 - [Xiao](https://discord.gg/u5QS2tRHm6)
-
-#-<:hydro:977274232520183918>
-- [Barbara](https://discord.gg/6vVQcsrAgN)
-- [Candace](https://discord.gg/vhg27QdEGM)
-- [Kokomi](https://discord.gg/ErHp3BnFkg)
-- [Mona](https://discord.gg/wVERTRUNBx)
-- [Nilou](https://discord.gg/RGnawuSV3J)
-- [Xingqiu](https://discord.gg/5MKsJyhkQv)
 
 #-<:electro:977274232419536906>
 - [Beidou](https://discord.gg/rgS2f9dBxb)
