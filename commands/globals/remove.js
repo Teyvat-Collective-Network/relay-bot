@@ -17,6 +17,7 @@ Parent.subcommand({
   const reply = content => interaction.reply({ content, ephemeral: true });
 
   const tcnData = await util.getTCNData(interaction);
+  console.log(tcnData);
   if (!tcnData.observer) return reply('Sorry, only TCN execs can remove global channels.');
   
   const global = await interaction.client.db.Global.findOne({ name: interaction.options.getString('name') });

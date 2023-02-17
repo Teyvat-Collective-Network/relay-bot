@@ -14,7 +14,12 @@ const client = new Bot({
   partials: [Partials.Message],
   register: {
     global: !!process.env.PRODUCTION,
-    guilds: ['838473416310652998'],
+    guilds: [
+      '1074629636224466974',
+      '1074629679937507348',
+      '1074629732521488434',
+      '1074629783440326679',
+    ],
   },
 });
 

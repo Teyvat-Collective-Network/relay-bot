@@ -1,7 +1,7 @@
 import DJS from '@aroleaf/djs-bot';
-import { template } from 'discord-markdown-embeds';
+import DME from 'discord-markdown-embeds';
 
-const embed = template(`
+const embed = DME.template(`
 ---
 color: 0x207868
 ---

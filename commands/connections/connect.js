@@ -1,4 +1,4 @@
-import { ApplicationCommandOptionType, SlashCommand } from '@aroleaf/djs-bot';
+import { ApplicationCommandOptionType, PermissionFlagsBits, SlashCommand } from '@aroleaf/djs-bot';
 import GlobalManager from '../../lib/globalManager.js';
 import * as autocomplete from '../../lib/autocomplete.js';
 import * as util from '../../lib/util.js';
