@@ -55,7 +55,7 @@ A network of high-quality Genshin Impact character-mains style servers that focu
 - [Kaeya](https://discord.gg/WQzCpybycn)
 - [Layla](https://discord.gg/5YsP4UwdQt)
 - [Qiqi](https://discord.gg/wcZ69vg2KY)
-- [Shenhe](https://discord.gg/TZ9tpJMU5F)
+- [Shenhe](https://discord.gg/9waXTzWdVP)
 
 #-<:geo:977274232356622386>
 - [Gorou](https://discord.gg/NeDba9DQU4)
