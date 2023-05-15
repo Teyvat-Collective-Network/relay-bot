@@ -4,7 +4,8 @@ export default new ContextCommand({
   type: 3,
   name: 'user',
 }, async interaction => {
-  const reply = content => interaction.reply({ content, ephemeral: true });
+  await interaction.deferReply({ ephemeral: true });
+  const reply = content => interaction.editReply(content);
 
   const message = interaction.options.resolved.messages.first();
   const doc = await interaction.client.db.Message.findOne({ $or: [ { 'original.message': message.id }, { 'mirrors.message': message.id } ] });

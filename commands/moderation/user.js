@@ -10,7 +10,8 @@ export default new SlashCommand({
     required: true,
   }],
 }, async interaction => {
-  const reply = content => interaction.reply({ content, ephemeral: true });
+  await interaction.deferReply({ ephemeral: true });
+  const reply = content => interaction.editReply(content);
 
   const messageId = interaction.options.getString('message')?.match(/(\d+)\/?/)?.[1];
   const doc = messageId && await interaction.client.db.Message.findOne({ $or: [ { 'original.message': messageId }, { 'mirrors.message': messageId } ] });

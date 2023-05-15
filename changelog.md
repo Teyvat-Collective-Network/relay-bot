@@ -3,6 +3,11 @@
 Updates to the scam link list won't be explicitely versioned. The current scam link count is `16916`.
 
 
+# 1.12.1
+
+- Fixed `/user` and the `user` message command timing out
+
+
 ## 1.12
 
 - Split `/purge` into `/purge message` and `/purge user`:
@@ -26,47 +31,47 @@ Fixed nicknames, they show up again.
 
 ## 1.10
 
-Removed `/json-doc` and added its usecase into `/partners` directly.
+- Removed `/json-doc` and added its usecase into `/partners` directly.
 
 
 ## 1.9.4
 
-Support the new TCN API.
+- Support the new TCN API.
 
 
 ## 1.9.3
 
-Use autocomplete instead of modal for `/connect`.
+- Use autocomplete instead of modal for `/connect`.
 
 
 ## 1.9.2
 
-Threads AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.
+- Threads AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.
 
 
 ## 1.9.1
 
-Re-enabled webhook messages being relayed for bot webhooks. This should make NQN work again.
+- Re-enabled webhook messages being relayed for bot webhooks. This should make NQN work again.
 
 
 ## 1.9
 
-Added `/json-doc` to get the JSON of documents the global bot uses. 
+- Added `/json-doc` to get the JSON of documents the global bot uses. 
 
 
 ## 1.8.5
 
-edits were completely broken
+- edits were completely broken
 
 
 ## 1.8.4
 
-1.8.2 did *not* fix embeds not showing up, this update does.
+- 1.8.2 did *not* fix embeds not showing up, this update does.
 
 
 ## 1.8.3 "Parasite"
 
-Hotfix for a bug where external emotes do not show up using bot-owned webhooks.
+- Hotfix for a bug where external emotes do not show up using bot-owned webhooks.
 This update requires staff on each connected server to create a user-owned webhook so the global chat can keep supporting external emojis.
 
 
@@ -78,7 +83,7 @@ This update requires staff on each connected server to create a user-owned webho
 
 ## 1.8.1
 
-Fixes a bug where replies don't have any reply info, and instead look like non-reply messages.
+- Fixes a bug where replies don't have any reply info, and instead look like non-reply messages.
 
 
 ## 1.8
