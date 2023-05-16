@@ -18,7 +18,7 @@ async function compileRegexes(sources) {
   const regexes = [];
   for (const src of sources) {
     const data = await fs.readFile(path.resolve(src), 'utf-8');
-    regexes.push(data.split('\n'));
+    regexes.push(data.split('\n').filter(x => x));
   }
   return regexes.flat().map(regex => XRegExp(regex.split(';')[0], 'in'));
 }
