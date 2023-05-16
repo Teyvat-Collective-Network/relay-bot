@@ -107,7 +107,7 @@
 \btit(ty)?[- ]*(fuck|wank)(s|ers?|ing)?\b
 \btits?\b
 \btitt(y|ies)\b
-\btubgirl?\b
+\btubgirls?\b
 \bvag[ai]n[ae]s?\b
 \bwhoare?s?\b
 \bwhor(es?|ing)\b
