@@ -23,4 +23,4 @@
 \bspics?\b
 \btrann(y|ie)s?\b
 \bwindow[- ]?lickers?\b
-\chin([ck]|g[- ]?chong)s?\b
+\bchin([ck]|g[- ]?chong)s?\b
