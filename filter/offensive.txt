@@ -1,4 +1,6 @@
+\bautis(m|t(s|ic)?)\b
 \bheil[- ]?hitler\b
+\bk[. ]*y[. ]*s[. ]*\b; kys
+\bkill\s*your\s*sel(f|ves)\b
+\bmaga\b
 \bnazi(sm?)?\b
-\bk\.?y\.?s\.?\b; kys
-\bkill yourself\b
