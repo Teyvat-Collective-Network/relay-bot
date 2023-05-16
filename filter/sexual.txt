@@ -1,87 +1,114 @@
+\b(jack|jerk)(ing)?[- ]?offs?\b
 \b[li1]mpr[e3]g(nat[e3])?\b; impreg
-\babortion\b
+\babortions?\b
 \bahegao\b
 \banal\b
-\banus\b
-\bballsack?\b
+\banus(es)?\b
+\bassmunch(ers?)?\b
+\bballsack?s?\b
+\bbangbros?\b
 \bbdsm\b
 \bbea?stiality\b
-\bbeefcurtains\b
-\bblowjob\b
+\bbeef[- ]?curtains\b
+\bbimbos?\b
+\bblowjobs?\b
 \bblue[- ]?waffle\b
-\bboobjob\b
-\bbred\b
+\bboobjobs?\b
+\bbree?d\b
 \bbreeding\b
-\bbukkake?\b
-\bbumchum\b
-\bbuttfuck\b
-\bbuttnugget\b
-\bbuttplug\b
-\bchickswithdicks\b
+\bbukkake?s?\b
+\bbumchums?\b
+\bbuttfuck(ers?)?\b
+\bbuttnuggets?\b
+\bbuttplugs?\b
+\bbuttrap(e[sd]?|ist|ing)?\b
 \bc[o0]c(k(omi)?)?\b; cock/cockomi
+\bcamel(cunt|toe)s?\b
+\bchebs\b
+\bchickswithdicks\b
 \bchoa?d(es?)?\b; chode
 \bcl[i1]t[so]?(ty|r[iu]s)?; clitoris
-\bcrackwhore\b
-\bcreampie\b
-\bcum(ming)?\b
-\bs[e3](x|gg?s)(ual)?\b; sex
-\bdeep[- ]?throat\b
-\bdickcheese\b
-\bdildo\b
-\bcuntflaps\b
-\beja[ck]ul(ate?|ierer)\b; ejaculate
-\bfap\b
-\bfell?at(e|io)\b
-\bforeskin\b
-\bgang[- ]?(bang|rape)\b
-\bgigolo\b
-\bgloryhole\b
-\bg[- ]?spot\b
-\bhan[gd]job\b
-\bhard[-]?on\b
-\bh(en)?ta?i\b; hentai
-\bherpes\b
-\bhooker\b
-\bh[o0]rn[yi1]\b; horny
-\bincest\b
-\b(jack|jerk)(ing)?[- ]?off\b
-\bji(sm|zz)\b
-\blolicon\b
-\bmast[eu]rb[ea][rt](e|ion|ing|eur)?\b; masturbate
-\bmeatsping\b
-\bmetacuck\b
-\bmolest\b
-\bnutsack\b
-\borgasm\b
-\borg(y|ies?)\b; orgy
-\bp[o0]rno?\b; porn
-\bp[e3]?n[i1][s5]; penis
-\bpa?edo((ph|f)ile)?\b; pedophile
-\bpegg?(ing)?\b
-\bprostitution\b
-\bpub(i[sc]|es?)\b; pubes
-\bpu(ta|ss(y|ies?))\b; pussy
-\br[a@4*]p(ed?|ing|ist)\b; rape/rapist
-\brectum\b
-\brimjob\b
-\br(ule)?34\b
-\bs[l1]utd?\b; slut
-\bscat\b
-\bscrotum\b
-\bsemen\b
-\bshemale\b
-\bshlong\b
-\bsperm\b
-\bstrap[- ]?on\b
-\bstriptease\b
-\btest(e|icle)s?\b
-\btubgirl\b
-\bvag[ai]n[ae]\b
-\bzoophil(e|ia)\b
-\bcamel(cunt|toe)\b
-\bcunn(y|ie)\b
-\bchebs\b
 \bclunge\b
-\bdicknose\b
-\bfetish\b
-\bgolden[- ]?shower\b
+\bcocks?\b
+\bcocksuck(ers?|ing)?\b
+\bcoonts?\b
+\bcrackwhores?\b
+\bcreampie[sd]?\b
+\bcum(s|ming)?\b
+\bcumdumps?\b
+\bcunn(y|ies?)\b
+\bcuntflaps?\b
+\bcunts?\b
+\bdeep[- ]?throat(s|ing)?\b
+\bdickcheese\b
+\bdicknoses?\b
+\bdildos?\b
+\bdogg(y|ie)[- ]*styled?\b
+\beja[ck]ul(ate?|ierer)\b; ejaculate
+\bfap(s|ping)?\b
+\bfell?at(es?|io)\b
+\bfetish(es)?\b
+\bfist[- ]*fuck(s|ed|ing|er)\b
+\bforeskins?\b
+\bfuta(nari)?s?\b
+\bg[- ]?spots?\b
+\bgang[- ]?(bang|rape?)(ing)?\b
+\bgigolo\b
+\bgloryholes?\b
+\bgoatse[sd]?\bv
+\bgolden[- ]?showers?\b
+\bh(en)?ta?i\b; hentai
+\bh[o0]rn[yi1]\b; horny
+\bhan[gd]jobs?\b
+\bhard[-]?ons?\b
+\bherpes\b
+\bhookers?\b
+\bincest\b
+\bji(sm|zz)(ing)?\b
+\blolicons?\b
+\blolis?\b
+\bmast[eu]rb[ea][rt](e|ion|ing|eur)?\b; masturbate
+\bmeatspings?\b
+\bmetacucks?\b
+\bmolest(s|ed|[eo]r|ing)?\b
+\bnutsacks?\b
+\borg(y|ies?)\b; orgy
+\borgasm(s|ing)?\b
+\bp[e3]?n[i1][s5]; penis
+\bp[o0]rno?s?\b; porn
+\bpa?edo((ph|f)ile)?\b; pedophile
+\bpegg?(s|ed|ing)?\b
+\bpissflaps?\b
+\bprostitutes?\b
+\bprostitution\b
+\bpu(ta|ss(y|ies?))\b; pussy
+\bpub(i[sc]|es?)\b; pubes
+\br(ule)?\s*34\b
+\br[a@4*]p(ed?|ing|ist)\b; rape/rapist
+\brectums?\b
+\bredtube\b
+\brimjobs?\b
+\bs[e3](x|gg?s)(ual)?\b; sex
+\bs[l1]utd?\b; slut
+\bscat(s|t(ing|ed))?\b
+\bscrotums?\b
+\bsemen\b
+\bshemales?\b
+\bshitdicks?\b
+\bshlongs?\b
+\bshotacons?\b
+\bshotas?\b
+\bskanks?\b
+\bsmegma\b
+\bsperm\b
+\bstrap[- ]?ons?\b
+\bstripteas(e[sd]?|ing)\b
+\btest(e|icle)s?\b
+\btit(ty)?[- ]*(fuck|wank)(s|ers?|ing)?\b
+\btits?\b
+\btitt(y|ies)\b
+\btubgirl?\b
+\bvag[ai]n[ae]s?\b
+\bwhoare?s?\b
+\bwhor(es?|ing)\b
+\bzoophil(es?|ia)\b

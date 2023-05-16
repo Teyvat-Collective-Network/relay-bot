@@ -1,20 +1,26 @@
-\b(carpet|rug)[- ]?muncher\b
-\bwindow[- ]?licker\b
-\bdyke\b
-\b(dune[- ]?coon)\b
-\bsand[- ]?nigger\b
+\b(carpet|rug)[- ]?munchers?\b
+\b(dune[- ]?coon)s?\b
 \b(fagg?[io]{1,2}t?s?)\b; faggot
-\bfudge[- ]?packer\b
+\bbeaners?\b
+\bbufties?\b
+\bbumbandits?\b
+\bchinks?\b
+\bdykes?\b
+\bfudge[- ]?packers?\b
+\bfurfag(g?ot)?s?\b
+\bgooks?\b
+\bgyps(y|ies)\b
+\bjiggaboos?\b
+\bkykes?\b
+\bmongoloids?\b
 \bn[i1e]g([gr]?[aeu]([rhs]|sse)?|[- ]?nog)\b; nigger
+\bnegroe?s?\b
 \br(ee?|-)tar(d(ed)?)?\b; retard
-\bskank\b
-\bslut\b
-\btrann(y|ie)\b
-\bkyke\b
-\bbeaner\b
-\bbumbandit\b
-\chin([ck]|g[- ]?chong)\b
-\bbuftie\b
-\bgook\b
-\bspic\b
-\bjiggaboo\b
+\bsand[- ]?niggers?\b
+\bschizos?\b
+\bskanks?\b
+\bslut(s|ty)?\b
+\bspics?\b
+\btrann(y|ie)s?\b
+\bwindow[- ]?lickers?\b
+\chin([ck]|g[- ]?chong)s?\b
