@@ -71,6 +71,7 @@
 \bmeatspings?\b
 \bmetacucks?\b
 \bmolest(s|ed|[eo]r|ing)?\b
+\bnude[sz]?\b
 \bnutsacks?\b
 \borg(y|ies?)\b; orgy
 \borgasm(s|ing)?\b
