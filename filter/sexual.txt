@@ -65,6 +65,7 @@
 \bhookers?\b
 \bincest\b
 \bji(sm|zz)(ing)?\b
+\bkoks?\b
 \blolicons?\b
 \blolis?\b
 \bmast[eu]rb[ea][rt](e|ion|ing|eur)?\b; masturbate
