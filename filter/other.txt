@@ -1,3 +1,4 @@
 <@!?\d+> has leveled up!; tatsu level message
+\*\*<@!?\d+>\*\* has earned the \*\*`.+`\*\* role!; tatsu role reward message
 Can someone test my first game\?; scaaaaam
 Welcome back, <@!?\d+>, I removed your AFK\.
