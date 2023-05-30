@@ -37,7 +37,8 @@ export default new Event({
 
   // check if the author is banned, or the message contains disallowed content
   if (global.bans.includes(message.author.id)) return message.delete().catch(() => {});
-  if(check(message.content)) {
+  const user = await message.client.db.user(message.author);
+  if(check(message.content) || check(user?.nickname || message.member?.displayName || message.author?.username)) {
     await message.delete().catch(() => {});
     return util.log(message, util.tags.blocked, global).catch(() => {});
   }

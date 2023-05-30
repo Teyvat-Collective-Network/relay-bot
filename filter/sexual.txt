@@ -4,6 +4,7 @@
 \bahegao\b
 \banal\b
 \banus(es)?\b
+\basseat(ers?|ing)\b
 \bassmunch(ers?)?\b
 \bballsack?s?\b
 \bbangbros?\b
