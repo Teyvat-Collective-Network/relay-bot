@@ -25,7 +25,7 @@ parent.subcommand({
   if (!message) return reply('Sorry, I couldn\'t find that message.');
   
   const tcnData = await getTCNData(interaction);
-  if (!message.author.id === interaction.user.id && !tcnData.observer && !interaction.memberPermissions.has(PermissionFlagsBits.ManageMessages)) return reply('Only TCN observers and people who can manage messages can force-purge messages.');
+  if (message.author.id !== interaction.user.id && !tcnData.observer && !interaction.memberPermissions.has(PermissionFlagsBits.ManageMessages)) return reply('Only TCN observers and people who can manage messages can force-purge messages.');
   
   const { count, failed } = await purgeMessage(doc, interaction.client);
   return reply(`Deleted **${count}** messages.${failed.length 

@@ -27,7 +27,7 @@ parent.subcommand({
   const docs = await interaction.client.db.Message.find({ author: user.id }).sort({ _id: -1 }).limit(messageCount);
   
   const tcnData = await getTCNData(interaction);
-  if (!user.id === interaction.user.id && !tcnData.observer && !interaction.memberPermissions.has(PermissionFlagsBits.ManageMessages)) return reply('Only TCN observers and people who can manage messages can force-purge messages.');
+  if (user.id !== interaction.user.id && !tcnData.observer && !interaction.memberPermissions.has(PermissionFlagsBits.ManageMessages)) return reply('Only TCN observers and people who can manage messages can force-purge messages.');
   
   const { count, failed } = await bulkPurgeMessages(docs, interaction.client);
   return reply(`Deleted **${count}** messages.${failed.length 
