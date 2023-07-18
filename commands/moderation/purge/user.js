@@ -1,5 +1,5 @@
 import { ApplicationCommandOptionType } from '@aroleaf/djs-bot';
-import { bulkPurgeMessages, getTCNData } from '../../../lib/util.js';
+import { bulkPurgeMessages, fakeMessage, getTCNData, log } from '../../../lib/util.js';
 import parent from './index.js';
 
 parent.subcommand({
@@ -30,8 +30,12 @@ parent.subcommand({
   if (user.id !== interaction.user.id && !tcnData.observer && !interaction.memberPermissions.has(PermissionFlagsBits.ManageMessages)) return reply('Only TCN observers and people who can manage messages can force-purge messages.');
   
   const { count, failed } = await bulkPurgeMessages(docs, interaction.client);
-  return reply(`Deleted **${count}** messages.${failed.length 
+  await reply(`Deleted **${count}** messages.${failed.length 
     ? `\nDeletion failed for the following servers:\n**-** ${failed.map(guild => guild.name).join('\n**-** ')}` 
     : ''
   }`);
+
+  return log(fakeMessage(interaction, {
+    content: `purged **${messageCount}** of ${user}'s messages`,
+  }), util.tags.bulk, global).catch(console.error);
 });
