@@ -1,5 +1,5 @@
 import { ApplicationCommandOptionType, PermissionFlagsBits } from '@aroleaf/djs-bot';
-import { bulkPurgeMessages, fakeMessage, getTCNData, log } from '../../../lib/util.js';
+import { bulkPurgeMessages, fakeMessage, getTCNData, log, tags } from '../../../lib/util.js';
 import parent from './index.js';
 
 parent.subcommand({
@@ -25,6 +25,7 @@ parent.subcommand({
   const messageCount = interaction.options.getInteger('count') || 100;
   
   const docs = await interaction.client.db.Message.find({ author: user.id }).sort({ _id: -1 }).limit(messageCount);
+  const global = await interaction.client.db.Global.findOne({ subscriptions: mirror.channel });
   
   const tcnData = await getTCNData(interaction);
   if (user.id !== interaction.user.id && !tcnData.observer && !interaction.memberPermissions.has(PermissionFlagsBits.ManageMessages)) return reply('Only TCN observers and people who can manage messages can force-purge messages.');
@@ -37,5 +38,5 @@ parent.subcommand({
 
   return log(fakeMessage(interaction, {
     content: `purged **${messageCount}** of ${user}'s messages`,
-  }), util.tags.bulk, global).catch(console.error);
+  }), tags.bulk, global).catch(console.error);
 });
