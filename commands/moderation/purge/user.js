@@ -1,4 +1,4 @@
-import { ApplicationCommandOptionType } from '@aroleaf/djs-bot';
+import { ApplicationCommandOptionType, PermissionFlagsBits } from '@aroleaf/djs-bot';
 import { bulkPurgeMessages, fakeMessage, getTCNData, log } from '../../../lib/util.js';
 import parent from './index.js';
 
