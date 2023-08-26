@@ -5,7 +5,7 @@ color: 0x207868
 # Global Chat Rules
 These are the rules for the global chat. If you're chatting in the global chat, you should follow these rules, as well as the rules of the server you're sending messages from.
 
-If you disagree with any of these rules, please contact `Leaf#1950`.
+If you disagree with any of these rules, please contact `@hyperneutrino`.
 
 ## 1. Respect each other
 No harrassment, discrimination or personal attacks.
