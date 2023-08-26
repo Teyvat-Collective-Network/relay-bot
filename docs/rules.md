@@ -33,4 +33,4 @@ Small well-known phrases and memes are allowed to be in other languages.
 
 ## 8. Listen to the mods
 These rules are guidelines and are not complete. In the end, moderators decide.
-If you think a moderator made a mistake, please contact `Leaf#1950`.
+If you think a moderator made a mistake, please contact `@hyperneutrino`.
